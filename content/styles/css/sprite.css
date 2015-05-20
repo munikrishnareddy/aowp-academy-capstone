@@ -1,0 +1,27 @@
+/*
+ * Sprites
+ */
+.sprites { background: url(../../images/sprites.png) no-repeat; }
+.accenture-owp { width: 101px; height: 40px; background-position: -64px -54px; }
+.aowp { width: 64px; height: 16px; background-position: -67px 0; }
+.arrow-left { width: 19px; height: 16px; background-position: -116px -35px; }
+.burger-menu { width: 29px; height: 22px; background-position: 0 -67px; }
+.burger { width: 30px; height: 31px; background-position: -67px -19px; }
+.check-blue { width: 41px; height: 41px; background-position: 0 0; }
+.check-white { width: 28px; height: 21px; background-position: -33px -73px; }
+.chevron-right { width: 11px; height: 20px; background-position: -16px -44px; }
+.facebook { width: 13px; height: 25px; background-position: -100px -19px; }
+.google-plus { width: 25px; height: 25px; background-position: -134px 0; }
+.jump { width: 30px; height: 29px; background-position: 0 -125px; }
+.open-external { width: 13px; height: 14px; background-position: 0 -44px; }
+.phone { width: 13px; height: 13px; background-position: -116px -19px; }
+.photo-burguer-small { width: 171px; height: 123px; background-position: -33px -97px; }
+.pizza-slice { width: 30px; height: 30px; background-position: 0 -92px; }
+.rating-star-disabled { width: 20px; height: 20px; background-position: -44px 0; }
+.rating-star-enabled { width: 19px; height: 20px; background-position: -44px -23px; }
+.road-directions { width: 42px; height: 42px; background-position: -162px 0; }
+.stack { width: 19px; height: 20px; background-position: -138px -28px; }
+.taco { width: 30px; height: 30px; background-position: 0 -157px; }
+.this-guy { width: 30px; height: 30px; background-position: 0 -190px; }
+.twitter { width: 29px; height: 24px; background-position: -32px -46px; }
+.utensils { width: 33px; height: 41px; background-position: -168px -45px; }

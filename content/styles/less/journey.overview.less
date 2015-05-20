@@ -1,0 +1,229 @@
+@import (reference) "common.less";
+/****************************
+ * Journey Overview Screen
+ ***************************/
+
+.journey-overview {
+    padding: 10px 80px 10px 80px;
+    background-color: white;
+    margin-bottom: 10px;
+    .food-types-widget {
+        padding: 10px;
+        border-bottom: 1px solid #e7e7e7;
+        min-height: 55px;
+        .food-type-dropdown {
+            display: none;
+        }
+        .food-type-buttons {
+            button {
+                width: 100px;
+            }
+        }
+        button {
+            margin-right: 5px;
+        }
+        .sort-control {
+            float: right;
+            cursor: pointer;
+            button {
+                .fa-sort {
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+    .food-type-overview {
+        min-height: 120px;
+        .ft-progress {
+            .circleContainer {
+                background-color: #fe6859;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image:
+                /* 10% = 126deg = 90 + ( 360 * .1 ) */
+                
+                url(../../images/american-food-icon.png), linear-gradient(126deg, transparent 50%, #FE5140 50%), linear-gradient(90deg, #FE5140 50%, transparent 50%);
+            }
+            .circleContainer.inner {
+                background-color: black;
+            }
+        }
+        .ft-description {
+            max-width: 500px;
+            .st-progress {
+                color: #a8a8a8;
+            }
+        }
+        .ft-actions {
+            text-align: center;
+            float: right;
+            padding: 10px;
+            .duration {
+                background-color: #f1f1f1;
+                padding: 6px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.journey-overview .food-types-widget .food-type-buttons,
+.journey-overview .food-types-widget .food-type-dropdown {
+    float: left;
+}
+
+.journey-overview .food-types-widget .sort-control button,
+.journey-overview .food-types-widget .sort-control button:hover,
+.journey-overview .food-types-widget .sort-control button:active,
+.journey-overview .food-types-widget .sort-control button:focus {
+    border: none;
+    background-color: transparent;
+}
+
+.journey-overview .food-type-overview .ft-progress,
+.journey-overview .food-type-overview .ft-description {
+    float: left;
+    padding: 10px;
+}
+
+.journey-overview-items {
+    padding: 10px 80px 10px 80px;
+    .ft-item {
+        margin-bottom: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: white;
+        .fti-header {
+            .fa.active {
+                color: #2DB2FF;
+            }
+        }
+        .fti-number {
+            color: white;
+        }
+        .fti-title {
+            margin-left: 15px;
+        }
+        .fti-body {
+            margin-top: 5px;
+            padding-top: 8px;
+            display: flex;
+            border-top: solid 1px #e7e7e7;
+            .review {
+                .r-name {
+                    font-weight: bold;
+                }
+                .r-reviews {
+                    color: #a8a8a8;
+                }
+            }
+            .google-map {
+                text-align: center;
+            }
+            .gallery {
+                background-image: url(../../images/food-gallery-preview.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                text-align: center;
+                color: white;
+                text-shadow: 1px 1px 2px #000;
+                img {
+                    margin-top: 45px;
+                    margin-bottom: 5px;
+                }
+            }
+            .contact {
+                background-color: #f0f0f0;
+                padding-top: 10px;
+                hr {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    border-top-color: #a8a8a8;
+                }
+                .r-status {
+                    font-weight: bold;
+                }
+                .r-status.open {
+                    color: green;
+                }
+                .r-status.closed {
+                    color: red;
+                }
+            }
+        }
+    }
+    .fti-body {
+        .r-rating {
+            unicode-bidi: bidi-override;
+            span.star {
+                font-family: FontAwesome;
+                font-weight: normal;
+                font-style: normal;
+                display: inline-block;
+            }
+            span.star:before {
+                content: "\f006";
+                padding-right: 0px;
+                color: #777777;
+            }
+            span.star-active:before {
+                content: "\f005";
+                color: #e3cf7a;
+            }
+        }
+    }
+}
+/* Mobile adjustments */
+
+@media (max-width: @mobile_mediaquery_value) {
+    .journey-overview .food-type-overview .ft-progress,
+    .journey-overview .food-type-overview .ft-description,
+    .journey-overview .food-type-overview .ft-actions {
+        padding: 5px;
+    }
+    .journey-overview {
+        .food-type-overview {
+            .ft-description {
+                width: 80%;
+            }
+            .ft-actions {
+                float: none;
+                clear: both;
+            }
+        }
+        .food-types-widget {
+            .food-type-buttons {
+                display: none;
+            }
+            .food-type-dropdown {
+                display: inline;
+            }
+        }
+    }
+    .journey-overview .food-type-overview .ft-actions div,
+    .journey-overview .food-type-overview .ft-actions button {
+        width: 49.8%;
+        float: left;
+    }
+    .circleContainer {
+        width: 50px;
+        height: 50px;
+        line-height: 45px;
+    }
+    .journey-overview-items .ft-item .fti-body .gallery,
+    .journey-overview-items .ft-item .fti-body .google-map {
+        display: none;
+    }
+    .journey-overview-items .ft-item .fti-body .review,
+    .journey-overview-items .ft-item .fti-body .contact {
+        width: 49.5%;
+    }
+}
+/* Tablet adjustments */
+
+@media (max-width: @tablet_mediaquery_value) {
+    .journey-overview,
+    .journey-overview-items {
+        padding: 0;
+    }
+}
