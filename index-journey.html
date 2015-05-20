@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Capstone</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!--Vendor CSS-->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+    <!--Custom CSS-->
+    <link href="content/styles/css/sprite.css" rel="stylesheet" />
+    <link href="content/styles/css/styles.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="container">
+
+        <!--Navigation Menu-->
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand">FoodieJournal</a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index-journey-overview.html">Journey</a></li>
+                            <li class="active"><a href="index-journey.html">My Progress</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle user-menu" data-toggle="dropdown" role="button" aria-expanded="false">Hi Accenture! 
+                                    <img src="content/images/avatar.png" class="img-circle" alt="Avatar">
+                                    <span class="caret"></span>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#">My account</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="index-home-login.html">Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+
+        </header>
+
+        <!-- Main Container-->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="journey">
+
+                    <div class="text-center">
+                        <h3>Welcome! Choose a track to get started</h3>
+                    </div>
+
+                    <div class="col-sm-3 food-type-container">
+                        <div class="journey-progress">
+                            <img src="content/images/american-food-icon.png" alt="American Food" />
+                            <span class="food-name-type">American</span>
+                            <div class="progress-percentage">20%</div>
+                        </div>
+                        <div class="description">
+                            <p>One characteristic of American cooking is the fusion of multiple ethnic of regional approaches into completely new cooking styles.</p>
+                            <span class="duration">Duration: 3 weeks</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3 food-type-container">
+                        <div class="journey-progress">
+                            <img src="content/images/italian-food-icon.png" alt="Italian Food" />
+                            <span class="food-name-type">Italian</span>
+                            <div class="progress-percentage">0%</div>
+                        </div>
+                        <div class="description">
+                            <p>An Italian meal is famous for its structure sections: the appetiser, pasta or rice dish, a meat course and dolce dessert.</p>
+                            <span class="duration">Duration: 1 weeks</span>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-3 food-type-container">
+                        <div class="journey-progress">
+                            <img src="content/images/mexican-food-icon.png" alt="Mexican Food" />
+                            <span class="food-name-type">Mexican</span>
+                            <div class="progress-percentage">0%</div>
+                        </div>
+                        <div class="description">
+                            <p>Known for its varied flavours and spices, the food of Mexico is a result of the Spanish conquistadores' interaction with the aztec culture.</p>
+                            <span class="duration">Duration: 2 weeks</span>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-3 food-type-container">
+                        <div class="journey-progress">
+                            <img src="content/images/japanese-food-icon.png" alt="Japanese Food" />
+                            <span class="food-name-type">Japanese</span>
+                            <div class="progress-percentage">0%</div>
+                        </div>
+                        <div class="description">
+                            <p>In 2014, 14 restaurants in Tokyo and Shonan mantain Michelin three-stars rating, the ultimate international recognition in the culinary world.</p>
+                            <span class="duration">Duration: 3 weeks</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <p>Developed by</p>
+            <div class="footer-images">
+                <div class="sprites aowp"></div>
+                <div class="sprites accenture-owp"></div>
+            </div>
+        </footer>
+    </div>
+    <!--Vendor Javascript-->
+    <script src="vendor/jquery/jquery.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+
+    <!--Custom Javascript-->
+    <script src="app/dom.manipulation.js"></script>
+
+</body>
+
+</html>

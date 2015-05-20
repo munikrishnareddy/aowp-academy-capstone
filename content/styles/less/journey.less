@@ -1,0 +1,57 @@
+@import (reference) "common.less";
+
+/****************************
+ * Journey Screen
+ ***************************/
+
+.journey {
+    .food-type-container {
+        .journey-progress {
+            background-color: @red;
+            text-align: center;
+            padding: 5px;
+            padding-top: 30px;
+            min-height: 100px;
+            color: @white;
+            font-weight: bold;
+            img {
+                padding-right: 10px;
+            }
+            .progress-percentage {
+                background-color: @lightred;
+                margin-top: 5px;
+            }
+        }
+        .description {
+            background-color: @white;
+            min-height: 130px;
+            padding: 8px;
+            font-size: 12px;
+        }
+        .duration {
+            font-weight: bold;
+        }
+    }
+}
+/* Mobile adjustments */
+
+@media (max-width: @mobile_mediaquery_value) {
+    .journey {
+        .food-type-container {
+            margin-bottom: 10px;
+            .journey-progress {
+                padding-top: 10px;
+                min-height: 80px;
+            }
+            .sprites {
+                margin: 0 auto;
+            }
+            .food-name-type {
+                line-height: 0px;
+            }
+            .description {
+                min-height: 50px;
+            }
+        }
+    }
+}

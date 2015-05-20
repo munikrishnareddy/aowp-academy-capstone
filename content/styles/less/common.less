@@ -1,0 +1,179 @@
+
+/****************************
+ * Variables
+ ***************************/
+@black: black;
+@white: white;
+@lightergrey: #f0f0f0;
+@lightgrey: #e7e7e7;
+@darkgrey: #a8a8a8;
+@darkgrey_b: #474747;
+@darkgrey_c: #3a3a3a;
+@orange: #FE5140;
+@lightorange: #fe6859;
+@red: #CB3729;
+@lightred: #d94f42;
+@mobile_mediaquery_value: 700px;
+@tablet_mediaquery_value: 1000px;
+/****************************
+ * Font
+ ***************************/
+
+@font-face {
+    font-family: "ProximaNova";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/ProximaNova-Regular.eot");
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url('../fonts/ProximaNova-Regular.svg') format('svg');
+    text-rendering: optimizeLegibility;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 1) {
+    @font-face {
+        font-family: 'ProximaNova';
+        src: url('../fonts/ProximaNova-Regular.svg') format('svg');
+    }
+}
+
+body {
+    font-family: 'ProximaNova', sans-serif;
+    background-color: @lightergrey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'ProximaNova', sans-serif;
+    font-weight: bold;
+}
+
+p,
+a,
+span,
+div,
+input,
+table,
+select {
+    font-family: 'ProximaNova', sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+/****************************
+ * Navbar
+ ***************************/
+.navbar.navbar-default {
+    margin-bottom: 0px;
+    background-color: @orange;
+    border-radius: 0px;
+    border: 0px;
+    .login-collapsed {
+        font-size: 14px;
+        float: right;
+        display: none;
+    }
+    a {
+        color: white !important;
+    }
+    .navbar-toggle {
+        border-color: transparent;
+        float: left;
+        .icon-bar {
+            background-color: white;
+        }
+    }
+    .navbar-nav {
+        .user-menu {
+            padding: 10px 15px 5px 15px !important;
+            background-color: @orange !important;
+            img {
+                height: 30px;
+                width: 30px;
+                margin-left: 5px;
+            }
+        }
+        .dropdown-menu {
+            li {
+                a {
+                    color: black !important;
+                }
+                a:hover {
+                    background-color: @orange;
+                    color: white !important;
+                }
+            }
+        }
+    }
+    .nav.navbar-nav {
+        li.active {
+            a {
+                background-color: #fe6859;
+            }
+        }
+    }
+}
+.navbar.navbar-default .navbar-toggle:hover,.navbar.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .navbar.navbar-default {
+        .navbar-header {
+            .navbar-toggle {
+                margin-right: 0px;
+                padding-right: 0px;
+            }
+        }
+        .navbar-nav {
+            .dropdown-menu {
+                li {
+                    a {
+                        color: white !important;
+                    }
+                }
+                li.divider {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+
+/****************************
+ * Buttons
+ ***************************/
+
+.btn {
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: @orange;
+    border-color: @lightorange;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #e44839;
+    border-color: #e44839;
+}
+
+.btn-inverse {
+    background-color: @darkgrey_b;
+    border-color: #545454;
+    color: @lightgrey;
+}
+
+.btn-inverse:hover,
+.btn-inverse:active,
+.btn-inverse:focus {
+    background-color: @darkgrey_c;
+    border-color: #e44839;
+    color: @lightgrey;
+}

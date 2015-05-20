@@ -1,0 +1,116 @@
+@import (reference) "common.less";
+
+/****************************
+ * Journey Challenge Screen
+ ***************************/
+
+.journey-challenge {
+    .breadcrumb {
+        color: @orange;
+        font-weight: bold;
+        background-color: transparent;
+        margin-bottom: 0px;
+        .current-journey-name {
+            color: @darkgrey;
+        }
+    }
+    .challenge {
+        margin: 10px 80px 10px 80px;
+        padding: 5px;
+        background-color: @white;
+        -webkit-box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.75);
+        .ch-header {
+            .ch-number {
+                color: @white;
+            }
+            .ch-title {
+                margin-left: 15px;
+            }
+            .challenge-status {
+                color: @darkgrey;
+                font-weight: bold;
+                margin-left: 8px;
+            }
+        }
+        .ch-body {
+            margin-top: 5px;
+            padding-top: 5px;
+            border-top: solid 1px @lightgrey;
+            display: block;
+            .body-actions {
+                text-align: center;
+            }
+            .contact {
+                background-color: @lightergrey;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                hr {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    border-top-color: @darkgrey;
+                }
+                .r-status {
+                    font-weight: bold;
+                }
+                .r-status.open {
+                    color: green;
+                }
+                .r-status.closed {
+                    color: red;
+                }
+            }
+        }
+    }
+    .row {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .actions {
+        margin: 10px 80px 10px 80px;
+    }
+}
+
+.journey-challenge .challenge .ch-body .food-info,
+.journey-challenge .challenge .ch-body .map {
+    min-height: 100px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* Mobile adjustments */
+
+@media (max-width: @mobile_mediaquery_value) {
+    .journey-challenge .actions .previous,
+    .journey-challenge .actions .next {
+        display: none;
+    }
+    .journey-challenge {
+        .actions {
+            .change-status {
+                width: 99.5%;
+            }
+        }
+    }
+}
+/* Tablet adjustments */
+
+@media (max-width: @tablet_mediaquery_value) {
+    .journey-challenge .actions,
+    .journey-challenge .challenge {
+        margin: 0px;
+    }
+    .journey-challenge {
+        .challenge {
+            .ch-body {
+                .body-actions {
+                    margin-top: 5px;
+                }
+            }
+        }
+        .actions {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+    }
+}
