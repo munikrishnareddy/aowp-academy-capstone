@@ -1,7 +1,7 @@
-
 /****************************
  * Variables
  ***************************/
+
 @black: black;
 @white: white;
 @lightergrey: #f0f0f0;
@@ -23,15 +23,19 @@
     font-family: "ProximaNova";
     font-style: normal;
     font-weight: normal;
-    src: url("../fonts/ProximaNova-Regular.eot");
-    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url('../fonts/ProximaNova-Regular.svg') format('svg');
+    src: url("../../fonts/ProximaNova-Regular.eot");
+    src: url('../../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url("../../fonts/ProximaNova-Regular.woff") format("woff"), 
+        url("../../fonts/ProximaNova-Regular.woff2") format("woff2"), 
+        url("../../fonts/ProximaNova-Regular.ttf") format("truetype"), 
+        url('../../fonts/ProximaNova-Regular.svg') format('svg');
     text-rendering: optimizeLegibility;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 1) {
     @font-face {
         font-family: 'ProximaNova';
-        src: url('../fonts/ProximaNova-Regular.svg') format('svg');
+        src: url('../../fonts/ProximaNova-Regular.svg') format('svg');
     }
 }
 
@@ -67,53 +71,95 @@ select {
  * Navbar
  ***************************/
 
-.navbar {
+.navbar.navbar-default {
     margin-bottom: 0px;
-    background-color: @orange;
+    background-color: #FE5140;
     border-radius: 0px;
     border: 0px;
-    a {
-        color: @white !important;
+    .login-collapsed {
+        font-size: 14px;
+        float: right;
+        display: none;
     }
-    .navbar-default {
-        .navbar-toggle {
-            border-color: @orange;
-            .icon-bar {
-                background-color: @white;
-            }
+    a {
+        color: white !important;
+    }
+    .navbar-toggle {
+        border-color: transparent;
+        float: left;
+        .icon-bar {
+            background-color: white;
         }
     }
     .navbar-nav {
         .user-menu {
             padding: 10px 15px 5px 15px !important;
-            background-color: @orange !important;
-            img {
-                height: 30px;
-                width: 30px;
-                margin-left: 5px;
+            background-color: #FE5140 !important;
+        }
+    }
+    .nav.navbar-nav {
+        li.active {
+            a {
+                background-color: #fe6859;
             }
         }
-        .dropdown-menu {
-            li {
-                a {
-                    color: @black !important;
-                }
-                a:hover {
-                    background-color: @orange;
-                    color: @white !important;
-                }
+    }
+    .navbar-header {
+        .navbar-brand.dropdown {
+            font-size: 14px;
+            float: right;
+            list-style-type: none;
+            padding-top: 10px;
+            display: none;
+            a {
+                text-decoration: none;
             }
         }
     }
 }
 
-.navbar .navbar-default .navbar-toggle:hover,
-.navbar .navbar-default .navbar-toggle:focus {
-    border-color: @orange;
-    background-color: @lightorange;
+.navbar.navbar-default .navbar-toggle:hover,
+.navbar.navbar-default .navbar-toggle:focus {
+    background-color: transparent;
 }
 
+.navbar.navbar-default .navbar-header .navbar-brand.dropdown img,
+.navbar.navbar-default .navbar-nav .user-menu img {
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+}
 
+.navbar.navbar-default .navbar-header .navbar-brand.dropdown .dropdown-menu li a,
+.navbar.navbar-default .navbar-nav .dropdown-menu li a {
+    color: black !important;
+}
+
+.navbar.navbar-default .navbar-header .navbar-brand.dropdown .dropdown-menu li a:hover,
+.navbar.navbar-default .navbar-nav .dropdown-menu li a:hover {
+    background-color: #FE5140;
+    color: white !important;
+}
+
+@media (max-width: 768px) {
+    .navbar.navbar-default {
+        .navbar-header {
+            .navbar-toggle {
+                margin-right: 0px;
+                padding-right: 0px;
+            }
+        }
+        .navbar-nav {
+            .dropdown-menu {
+                li {
+                    a {
+                        color: white !important;
+                    }
+                }
+            }
+        }
+    }
+}
 /****************************
  * Buttons
  ***************************/
@@ -147,7 +193,6 @@ select {
     border-color: #e44839;
     color: @lightgrey;
 }
-
 
 /****************************
  * Login
@@ -251,7 +296,6 @@ footer .footer-images .aowp {
         }
     }
 }
-
 /* Mobile adjustments */
 @media (max-width: 510px) {
     .main-content {
@@ -337,30 +381,35 @@ footer .footer-images .aowp {
     }
 }
 
+
 /****************************
  * Journey Screen
  ***************************/
 
 .journey {
+    .journey-welcome {
+        padding-top: 35px;
+        padding-bottom: 40px;
+    }
     .food-type-container {
         .journey-progress {
-            background-color: @red;
+            background-color: #CB3729;
             text-align: center;
             padding: 5px;
             padding-top: 30px;
             min-height: 100px;
-            color: @white;
+            color: white;
             font-weight: bold;
             img {
                 padding-right: 10px;
             }
             .progress-percentage {
-                background-color: @lightred;
+                background-color: #d94f42;
                 margin-top: 5px;
             }
         }
         .description {
-            background-color: @white;
+            background-color: white;
             min-height: 130px;
             padding: 8px;
             font-size: 12px;
@@ -374,6 +423,13 @@ footer .footer-images .aowp {
 
 @media (max-width: @mobile_mediaquery_value) {
     .journey {
+        .journey-welcome {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            span {
+                display: block;
+            }
+        }
         .food-type-container {
             margin-bottom: 10px;
             .journey-progress {
@@ -395,35 +451,265 @@ footer .footer-images .aowp {
 
 
 /****************************
+ * Journey Overview Screen
+ ***************************/
+
+.journey-overview {
+    padding: 10px 80px 10px 80px;
+    background-color: white;
+    margin-bottom: 10px;
+    .food-types-widget {
+        padding: 10px;
+        border-bottom: 1px solid #e7e7e7;
+        min-height: 55px;
+        .food-type-dropdown {
+            display: none;
+        }
+        .food-type-buttons {
+            button {
+                width: 100px;
+            }
+        }
+        button {
+            margin-right: 5px;
+        }
+        .sort-control {
+            float: right;
+            cursor: pointer;
+            button {
+                .fa-sort {
+                    padding-left: 5px;
+                }
+            }
+        }
+    }
+    .food-type-overview {
+        min-height: 120px;
+        .ft-progress {
+            .circleContainer {
+                background-color: #fe6859;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image:
+                /* 10% = 126deg = 90 + ( 360 * .1 ) */
+                
+                url(../../images/american-food-icon.png), linear-gradient(126deg, transparent 50%, #FE5140 50%), linear-gradient(90deg, #FE5140 50%, transparent 50%);
+            }
+            .circleContainer.inner {
+                background-color: black;
+            }
+        }
+        .ft-description {
+            max-width: 500px;
+            .st-progress {
+                color: #a8a8a8;
+            }
+        }
+        .ft-actions {
+            text-align: center;
+            float: right;
+            padding: 10px;
+            .duration {
+                background-color: #f1f1f1;
+                padding: 6px;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.journey-overview .food-types-widget .food-type-buttons,
+.journey-overview .food-types-widget .food-type-dropdown {
+    float: left;
+}
+
+.journey-overview .food-types-widget .sort-control button,
+.journey-overview .food-types-widget .sort-control button:hover,
+.journey-overview .food-types-widget .sort-control button:active,
+.journey-overview .food-types-widget .sort-control button:focus {
+    border: none;
+    background-color: transparent;
+}
+
+.journey-overview .food-type-overview .ft-progress,
+.journey-overview .food-type-overview .ft-description {
+    float: left;
+    padding: 10px;
+}
+
+.journey-overview-items {
+    padding: 10px 80px 10px 80px;
+    .ft-item {
+        margin-bottom: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color: white;
+        .fti-header {
+            .fa.active {
+                color: #2DB2FF;
+            }
+        }
+        .fti-number {
+            color: white;
+        }
+        .fti-title {
+            margin-left: 15px;
+        }
+        .fti-body {
+            margin-top: 5px;
+            padding-top: 8px;
+            display: flex;
+            border-top: solid 1px #e7e7e7;
+            .review {
+                .r-name {
+                    font-weight: bold;
+                }
+                .r-reviews {
+                    color: #a8a8a8;
+                }
+            }
+            .google-map {
+                text-align: center;
+            }
+            .gallery {
+                background-image: url(../../images/food-gallery-preview.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                text-align: center;
+                color: white;
+                text-shadow: 1px 1px 2px #000;
+                img {
+                    margin-top: 45px;
+                    margin-bottom: 5px;
+                }
+            }
+            .contact {
+                background-color: #f0f0f0;
+                padding-top: 10px;
+                hr {
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                    border-top-color: #a8a8a8;
+                }
+                .r-status {
+                    font-weight: bold;
+                }
+                .r-status.open {
+                    color: green;
+                }
+                .r-status.closed {
+                    color: red;
+                }
+            }
+        }
+    }
+    .fti-body {
+        .r-rating {
+            unicode-bidi: bidi-override;
+            span.star {
+                font-family: FontAwesome;
+                font-weight: normal;
+                font-style: normal;
+                display: inline-block;
+            }
+            span.star:before {
+                content: "\f006";
+                padding-right: 0px;
+                color: #777777;
+            }
+            span.star-active:before {
+                content: "\f005";
+                color: #e3cf7a;
+            }
+        }
+    }
+}
+/* Mobile adjustments */
+
+@media (max-width: @mobile_mediaquery_value) {
+    .journey-overview .food-type-overview .ft-progress,
+    .journey-overview .food-type-overview .ft-description,
+    .journey-overview .food-type-overview .ft-actions {
+        padding: 5px;
+    }
+    .journey-overview {
+        .food-type-overview {
+            .ft-description {
+                width: 80%;
+            }
+            .ft-actions {
+                float: none;
+                clear: both;
+            }
+        }
+        .food-types-widget {
+            .food-type-buttons {
+                display: none;
+            }
+            .food-type-dropdown {
+                display: inline;
+            }
+        }
+    }
+    .journey-overview .food-type-overview .ft-actions div,
+    .journey-overview .food-type-overview .ft-actions button {
+        width: 49.8%;
+        float: left;
+    }
+    .circleContainer {
+        width: 50px;
+        height: 50px;
+        line-height: 45px;
+    }
+    .journey-overview-items .ft-item .fti-body .gallery,
+    .journey-overview-items .ft-item .fti-body .google-map {
+        display: none;
+    }
+    .journey-overview-items .ft-item .fti-body .review,
+    .journey-overview-items .ft-item .fti-body .contact {
+        width: 49.5%;
+    }
+}
+/* Tablet adjustments */
+
+@media (max-width: @tablet_mediaquery_value) {
+    .journey-overview,
+    .journey-overview-items {
+        padding: 0;
+    }
+}
+
+
+/****************************
  * Journey Challenge Screen
  ***************************/
 
 .journey-challenge {
     .breadcrumb {
-        color: @orange;
+        color: #FE5140;
         font-weight: bold;
         background-color: transparent;
         margin-bottom: 0px;
         .current-journey-name {
-            color: @darkgrey;
+            color: #a8a8a8;
         }
     }
     .challenge {
         margin: 10px 80px 10px 80px;
         padding: 5px;
-        background-color: @white;
+        background-color: white;
         -webkit-box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.75);
         box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.75);
         .ch-header {
             .ch-number {
-                color: @white;
+                color: white;
             }
             .ch-title {
                 margin-left: 15px;
             }
             .challenge-status {
-                color: @darkgrey;
+                color: #a8a8a8;
                 font-weight: bold;
                 margin-left: 8px;
             }
@@ -431,19 +717,19 @@ footer .footer-images .aowp {
         .ch-body {
             margin-top: 5px;
             padding-top: 5px;
-            border-top: solid 1px @lightgrey;
+            border-top: solid 1px #e7e7e7;
             display: block;
             .body-actions {
                 text-align: center;
             }
             .contact {
-                background-color: @lightergrey;
+                background-color: #f0f0f0;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 hr {
                     margin-top: 5px;
                     margin-bottom: 5px;
-                    border-top-color: @darkgrey;
+                    border-top-color: #a8a8a8;
                 }
                 .r-status {
                     font-weight: bold;
@@ -463,6 +749,12 @@ footer .footer-images .aowp {
     }
     .actions {
         margin: 10px 80px 10px 80px;
+        .challenge-completed {
+            i {
+                color: #2DB2FF;
+                margin-right: 5px;
+            }
+        }
     }
 }
 
@@ -472,19 +764,31 @@ footer .footer-images .aowp {
     text-align: center;
     margin-bottom: 10px;
 }
-/* Mobile adjustments */
 
-@media (max-width: @mobile_mediaquery_value) {
-    .journey-challenge .actions .previous,
-    .journey-challenge .actions .next {
-        display: none;
+.journey-challenge .actions .challenge-completed,
+.journey-challenge .actions .challenge-completed:hover {
+    background-color: #e7e7e7;
+    border-color: #e7e7e7;
+    cursor: default;
+}
+
+.provide-reason {
+    text-align: center;
+    button {
+        width: 150px;
     }
-    .journey-challenge {
-        .actions {
-            .change-status {
-                width: 99.5%;
-            }
+    .modal-header {
+        border-bottom-color: transparent;
+    }
+    .modal-body {
+        textarea {
+            width: 80%;
         }
+    }
+    .modal-footer {
+        border-top-color: transparent;
+        text-align: center;
+        margin-bottom: 15px;
     }
 }
 /* Tablet adjustments */
@@ -506,133 +810,5 @@ footer .footer-images .aowp {
             margin-top: 5px;
             margin-bottom: 5px;
         }
-    }
-}
-
-
-/****************************
- * Journey Overview Screen
- ***************************/
-.journey-overview {
-    padding: 10px 80px 10px 80px;
-    background-color: white;
-    margin-bottom: 10px;
-    .food-types-widget {
-        padding: 10px;
-        border-bottom: 1px solid #e7e7e7;
-        min-height: 55px;
-        .food-type-dropdown {
-            display: none;
-        }
-        button {
-            margin-right: 5px;
-            width: 100px;
-        }
-        .sort-control {
-            float: right;
-            cursor: pointer;
-            button {
-                .fa-sort {
-                    padding-left: 5px;
-                }
-            }
-        }
-    }
-    .food-type-overview {
-        min-height: 120px;
-        .ft-progress {
-            .circleContainer {
-                background-color: #fe6859;
-                background-repeat: no-repeat;
-                background-position: center;
-                background-image:/* 10% = 126deg = 90 + ( 360 * .1 ) */url(../../images/american-food-icon.png),linear-gradient(126deg, transparent 50%, #FE5140 50%),linear-gradient(90deg, #FE5140 50%, transparent 50%);
-            }
-            .circleContainer.inner {
-                background-color: black;
-            }
-        }
-        .ft-description {
-            max-width: 400px;
-            .st-progress {
-                color: #a8a8a8;
-            }
-        }
-        .ft-actions {
-            text-align: center;
-            float: right;
-            padding: 10px;
-            .duration {
-                background-color: #f1f1f1;
-                padding: 6px;
-                margin-bottom: 5px;
-            }
-        }
-    }
-}
-.journey-overview .food-types-widget .food-type-buttons,.journey-overview .food-types-widget .food-type-dropdown {
-    float: left;
-}
-.journey-overview .food-types-widget .sort-control button,.journey-overview .food-types-widget .sort-control button:hover,.journey-overview .food-types-widget .sort-control button:active,.journey-overview .food-types-widget .sort-control button:focus {
-    border: none;
-    background-color: transparent;
-}
-.journey-overview .food-type-overview .ft-progress,.journey-overview .food-type-overview .ft-description {
-    float: left;
-    padding: 10px;
-}
-
-
-/* Mobile adjustments */
-
-@media (max-width: @mobile_mediaquery_value) {
-    .circleContainer {
-        width: 50px;
-        height: 50px;
-        line-height: 45px;
-    }
-    .journey-overview .food-type-overview .ft-progress,
-    .journey-overview .food-type-overview .ft-description,
-    .journey-overview .food-type-overview .ft-actions {
-        padding: 5px;
-    }
-    .journey-overview {
-        .food-type-overview {
-            .ft-description {
-                max-width: 300px;
-            }
-            .ft-actions {
-                float: none;
-                clear: both;
-            }
-        }
-        .food-types-widget {
-            .food-type-buttons {
-                display: none;
-            }
-            .food-type-dropdown {
-                display: inline;
-            }
-        }
-    }
-    .journey-overview .food-type-overview .ft-actions div,
-    .journey-overview .food-type-overview .ft-actions button {
-        width: 49.8%;
-        float: left;
-    }
-    .journey-overview-items .ft-item .fti-body .gallery,
-    .journey-overview-items .ft-item .fti-body .google-map {
-        display: none;
-    }
-    .journey-overview-items .ft-item .fti-body .review,
-    .journey-overview-items .ft-item .fti-body .contact {
-        width: 49.5%;
-    }
-}
-/* Tablet adjustments */
-
-@media (max-width: @tablet_mediaquery_value) {
-    .journey-overview,
-    .journey-overview-items {
-        padding: 0;
     }
 }

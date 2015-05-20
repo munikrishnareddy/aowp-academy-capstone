@@ -1,29 +1,32 @@
 @import (reference) "common.less";
-
 /****************************
  * Journey Screen
  ***************************/
 
 .journey {
+    .journey-welcome {
+        padding-top: 35px;
+        padding-bottom: 40px;
+    }
     .food-type-container {
         .journey-progress {
-            background-color: @red;
+            background-color: #CB3729;
             text-align: center;
             padding: 5px;
             padding-top: 30px;
             min-height: 100px;
-            color: @white;
+            color: white;
             font-weight: bold;
             img {
                 padding-right: 10px;
             }
             .progress-percentage {
-                background-color: @lightred;
+                background-color: #d94f42;
                 margin-top: 5px;
             }
         }
         .description {
-            background-color: @white;
+            background-color: white;
             min-height: 130px;
             padding: 8px;
             font-size: 12px;
@@ -37,6 +40,13 @@
 
 @media (max-width: @mobile_mediaquery_value) {
     .journey {
+        .journey-welcome {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            span {
+                display: block;
+            }
+        }
         .food-type-container {
             margin-bottom: 10px;
             .journey-progress {

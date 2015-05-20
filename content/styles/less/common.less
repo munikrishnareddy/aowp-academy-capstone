@@ -1,7 +1,7 @@
-
 /****************************
  * Variables
  ***************************/
+
 @black: black;
 @white: white;
 @lightergrey: #f0f0f0;
@@ -23,15 +23,19 @@
     font-family: "ProximaNova";
     font-style: normal;
     font-weight: normal;
-    src: url("../fonts/ProximaNova-Regular.eot");
-    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url('../fonts/ProximaNova-Regular.svg') format('svg');
+    src: url("../../fonts/ProximaNova-Regular.eot");
+    src: url('../../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url("../../fonts/ProximaNova-Regular.woff") format("woff"), 
+        url("../../fonts/ProximaNova-Regular.woff2") format("woff2"), 
+        url("../../fonts/ProximaNova-Regular.ttf") format("truetype"), 
+        url('../../fonts/ProximaNova-Regular.svg') format('svg');
     text-rendering: optimizeLegibility;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 1) {
     @font-face {
         font-family: 'ProximaNova';
-        src: url('../fonts/ProximaNova-Regular.svg') format('svg');
+        src: url('../../fonts/ProximaNova-Regular.svg') format('svg');
     }
 }
 
@@ -66,9 +70,10 @@ select {
 /****************************
  * Navbar
  ***************************/
+
 .navbar.navbar-default {
     margin-bottom: 0px;
-    background-color: @orange;
+    background-color: #FE5140;
     border-radius: 0px;
     border: 0px;
     .login-collapsed {
@@ -89,23 +94,7 @@ select {
     .navbar-nav {
         .user-menu {
             padding: 10px 15px 5px 15px !important;
-            background-color: @orange !important;
-            img {
-                height: 30px;
-                width: 30px;
-                margin-left: 5px;
-            }
-        }
-        .dropdown-menu {
-            li {
-                a {
-                    color: black !important;
-                }
-                a:hover {
-                    background-color: @orange;
-                    color: white !important;
-                }
-            }
+            background-color: #FE5140 !important;
         }
     }
     .nav.navbar-nav {
@@ -115,9 +104,41 @@ select {
             }
         }
     }
+    .navbar-header {
+        .navbar-brand.dropdown {
+            font-size: 14px;
+            float: right;
+            list-style-type: none;
+            padding-top: 10px;
+            display: none;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
 }
-.navbar.navbar-default .navbar-toggle:hover,.navbar.navbar-default .navbar-toggle:focus {
+
+.navbar.navbar-default .navbar-toggle:hover,
+.navbar.navbar-default .navbar-toggle:focus {
     background-color: transparent;
+}
+
+.navbar.navbar-default .navbar-header .navbar-brand.dropdown img,
+.navbar.navbar-default .navbar-nav .user-menu img {
+    height: 30px;
+    width: 30px;
+    margin-left: 5px;
+}
+
+.navbar.navbar-default .navbar-header .navbar-brand.dropdown .dropdown-menu li a,
+.navbar.navbar-default .navbar-nav .dropdown-menu li a {
+    color: black !important;
+}
+
+.navbar.navbar-default .navbar-header .navbar-brand.dropdown .dropdown-menu li a:hover,
+.navbar.navbar-default .navbar-nav .dropdown-menu li a:hover {
+    background-color: #FE5140;
+    color: white !important;
 }
 
 @media (max-width: 768px) {
@@ -135,15 +156,10 @@ select {
                         color: white !important;
                     }
                 }
-                li.divider {
-                    display: none;
-                }
             }
         }
     }
 }
-
-
 /****************************
  * Buttons
  ***************************/

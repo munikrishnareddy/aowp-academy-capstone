@@ -41,7 +41,7 @@
                             </li>
                             <li><a href="index-journey.html">My Progress</a>
                             </li>
-                        </ul>                        
+                        </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle user-menu" data-toggle="dropdown" role="button" aria-expanded="false">Hi Accenture! 
@@ -70,10 +70,10 @@
             <div class="col-sm-12">
                 <div class="journey-challenge">
                     <div class="breadcrumb">
-                        <i class="fa fa-long-arrow-left"></i> Journeys / 
+                        <i class="fa fa-long-arrow-left"></i> Journeys /
                         <span class="current-journey-name">American</span>
                     </div>
-                    
+
                     <div class="challenge">
                         <div class="ch-header">
                             <span class="fa-stack fa-lg text-center">
@@ -84,14 +84,14 @@
                         </div>
                         <div class="row ch-body">
                             <div class="col-sm-6 food-info">
-                                <img src="content/images/challenge-gallery-preview.jpg" alt="Gallery Preview"/>
+                                <img src="content/images/challenge-gallery-preview.jpg" alt="Gallery Preview" />
                             </div>
                             <div class="col-sm-6 map">
-                                <img src="content/images/map-example.jpg" alt="Location"/>
+                                <img src="content/images/map-example.jpg" alt="Location" />
                             </div>
                             <div class="col-sm-8 description">
                                 <h5>Instructions: Go ahead and ask for the ultimate Caramel Apple Pie</h5>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium semper velit. Aliquam at mi mi. Fusce sed tellus nisl. Duis in sagittis velit. Vestibulum viverra vitae leo in mattis. Etiam bibendum venenatis dolor quis pulvinar.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pretium semper velit. Aliquam at mi mi. Fusce sed tellus nisl. Duis in sagittis velit. Vestibulum viverra vitae leo in mattis. Etiam bibendum venenatis dolor quis pulvinar.</p>
                             </div>
                             <div class="col-sm-4 contact">
                                 <span class="r-wtime">Today 8:00 am - 9:00 pm</span>
@@ -100,7 +100,7 @@
                                 <hr>
                                 <span class="r-phone"><a><i class="fa fa-phone"></i> (510) 123-4564</a></span>
                                 <br>
-                                <span class="r-website"><a><i class="fa fa-external-link"></i> www.frankies.com</a></span>            
+                                <span class="r-website"><a><i class="fa fa-external-link"></i> www.frankies.com</a></span>
                             </div>
                             <div class="col-sm-12 body-actions">
                                 <button class="btn btn-default">Resent text notification</button>
@@ -112,8 +112,16 @@
                             <div class="col-sm-3 previous">
                                 <button class="btn btn-inverse btn-block">Previous</button>
                             </div>
-                            <div class="col-sm-6 chang-status">
+                            <div class="col-sm-6 change-status" hidden="hidden">
                                 <button class="btn btn-primary btn-block">Mark as Started</button>
+                            </div>
+                            <div class="col-sm-6" hidden="hidden">
+                                <a class="btn btn-default btn-block challenge-completed">
+                                    <i class="fa fa-check-circle fa-lg"></i> Way to go! Take the next challenge!
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <button id="btnProvideReason" class="btn btn-default btn-block">Provide Reason</button>
                             </div>
                             <div class="col-sm-3 next">
                                 <button class="btn btn-default btn-block">Next</button>
@@ -124,6 +132,30 @@
             </div>
         </div>
     </div>
+
+    <!-- Provide Reason Modal-->
+    <div class="provide-reason modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title">You ran out time!</h2>
+                </div>
+                <div class="modal-body">
+                    <p>This challenge will appear as missed.</p>
+                    <p>Please provide a reason to be able to start again.</p>
+                    <textarea rows="7"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Do it later</button>
+                    <button type="button" class="btn btn-primary">Send</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
     <!--Vendor Javascript-->
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.js"></script>
