@@ -1,0 +1,200 @@
+<!DOCTYPE html><!--[if IE 8]><html class="ie8 no-js" lang="en"><![endif]-->
+<!--[if IE 9]><html lang="en" class="ie9 no-js"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js"><!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Dashboard</title>
+        <meta name="description" content="A Simple Dashboard">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles/dashboard.css" />
+        <!--[if IE 8]>
+        <script>
+            // Protect window.console method calls, e.g. console is not defined on IE
+            (function() {
+                if (!window.console) {
+                    window.console = {};
+                }
+                // union of Chrome, FF, IE, and Safari console methods
+                var m = [
+                    "log", "info", "warn", "error", "debug", "trace", "dir", "group",
+                    "groupCollapsed", "groupEnd", "time", "timeEnd", "profile", "profileEnd",
+                    "dirxml", "assert", "count", "markTimeline", "timeStamp", "clear"
+                ];
+                // define undefined methods as noops to prevent errors
+                for (var i = 0; i < m.length; i++) {
+                    if (!window.console[m[i]]) {
+                        window.console[m[i]] = function() {};
+                    }
+                }
+            })();
+        </script><![endif]-->
+    </head>
+    <body class="dashboard-body">
+        <div class="container cf">
+            <div class="dash-mobile-bar"></div>
+            <div class="sidebar">
+                <div class="dash-button-wrapper">
+                    <a class="dash-nav-toggle" href="#">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="scroll-wrapper">
+                    <div class="section-wrapper">
+                        <h2 class="sidebar-title">Categories</h2>
+                        <ul class="sidebar-list category">
+                            <li class="page active" data-category="page">
+                                <button type="button" class="font-black">Pages</button>
+                            </li>
+                            <li class="atoms" data-category="atoms">
+                                <button type="button" class="font-black">Atoms</button>
+                            </li>
+                            <li class="molecules" data-category="molecules">
+                                <button type="button" class="font-black">Molecules</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <ul class="item-list">
+                    <li class="page review">
+                        <a href="pages/1-index.html">1-Home</a>
+                    </li>
+                    <li class="page review">
+                        <a href="pages/2-choose-a-track.html">2-Choose-a-track</a>
+                    </li>
+                    <li class="page review">
+                        <a href="pages/3-food-type-selection.html">3-Food-type-selection</a>
+                    </li>
+                    <li class="page review">
+                        <a href="pages/4-food-type-selection-state-step2.html">4-Food-type-selection-state-step2</a>
+                    </li>
+                    <li class="page review">
+                        <a href="pages/5-challenge-page.html">5-Challenge-page</a>
+                    </li>
+                    <li class="page review">
+                        <a href="pages/6-challenge-page-state-step2.html">6-Challenge-page-state-step2</a>
+                    </li>
+                    <li class="page review">
+                        <a href="pages/7-challenge-page-state-step3.html">7-Challenge-page-state-step3</a>
+                    </li>
+                    <li class="page review">
+                        <a href="pages/8-challenge-page-state-step4.html">8-Challenge-page-state-step4</a>
+                    </li>
+                    <li class="page review">
+                        <a href="pages/9-challenge-page-state-step5.html">9-Challenge-page-state-step5</a>
+                    </li>
+                    <li class="atoms review hide">
+                        <a href="atoms/button-demo.html">Button</a>
+                    </li>
+                    <li class="atoms review hide">
+                        <a href="atoms/choose-track-text-demo.html">Choose-track-text</a>
+                    </li>
+                    <li class="atoms review hide">
+                        <a href="atoms/circles-demo.html">Circles</a>
+                    </li>
+                    <li class="atoms review hide">
+                        <a href="atoms/circular-progress-demo.html">Circular-progress</a>
+                    </li>
+                    <li class="atoms review hide">
+                        <a href="atoms/next-challenge-btn-demo.html">Next-challenge-btn</a>
+                    </li>
+                    <li class="atoms review hide">
+                        <a href="atoms/search-text-form-demo.html">Search/Text-forms</a>
+                    </li>
+                    <li class="atoms review hide">
+                        <a href="atoms/square-progress-bar-demo.html">Square-progress-bar</a>
+                    </li>
+                    <li class="atoms review hide">
+                        <a href="atoms/typography-demo.html">Typography</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/account-link-demo.html">Account-link</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/back-arrow-demo.html">Back-arrow</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/back-arrow-state-step3-demo.html">Back-arrow-state-step3</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/challenge-page-btn-group-demo.html">Challenge-page-buttons</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/challenge-page-btn-group-state-step2-demo.html">Challenge-page-btn-group-state-step2</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/challenge-page-btn-group-state-step3-demo.html">Challenge-page-btn-group-state-step3</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/challenge-page-btn-group-state-step4-demo.html">Challenge-page-btn-group-state-step4</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/challenge-page-header-demo.html">Challenge-page-header</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/challenge-page-header-state-step2-demo.html">Challenge-page-header-state-step2</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/challenge-page-header-state-step3-demo.html">Challenge-page-header-state-step3</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/challenge-page-header-state-step4-demo.html">Challenge-page-header-state-step4</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/choose-track-demo.html">Choose-track</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/circle-and-text-demo.html">Circle-and-text</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/circle-text-accordion-demo.html">Circle-text-accordion</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/circle-text-accordion-state-step2-demo.html">Circle-text-accordion-state-step2</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/food-type-btn-group-demo.html">Food-type-btn-group</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/image-paragraph-demo.html">Image-paragraph</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/image-paragraph-state-step2-demo.html">Image-paragraph-state-step2</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/instructions-text-demo.html">Instructions-text</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/login-link-demo.html">Login-link</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/phone-email-box-demo.html">Phone-email-box</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/phone-email-box-state-step2-demo.html">Phone-email-box-state-step2</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/resend-text-demo.html">Resend-text</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/restaurant-info-demo.html">Restaurant-info</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/restaurant-info-state-step2-demo.html">Restaurant-info-state-step2</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/sort-by-menu-demo.html">Sort-by-menu</a>
+                    </li>
+                    <li class="molecules review hide">
+                        <a href="molecules/text-area-home-demo.html">Text-area-home</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script type="text/javascript" src="scripts/jquery.js"></script>
+        <script type="text/javascript" src="scripts/dashboard.js"></script>
+    </body>
+</html>

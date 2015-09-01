@@ -1,0 +1,311 @@
+<!DOCTYPE html><!--[if lte IE 8]><html class='lt-ie9 no-js' lang='en'><!--[endif]-->
+<!--[if gt IE 8]><!--><html class=' no-js' lang='en'><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>FEAD Academy Capstone</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/global.css"/>
+  <link rel="stylesheet" href="../styles/main.css">
+  <script src="../scripts/modernizr.js"></script>
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries-->
+  <!--[if lt IE 9]>
+  <script src="scripts/shims.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!--[if lte IE 7]>
+  <p class='browsehappy'>You are using an <strong>outdated</strong> browser. Please <a href='http://browsehappy.com/''>upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+  <header class="header-main">
+    <div class="hamburger">
+      <div class="hamburger-drop-down-menu"><img id="hamb-icon" src="../images/icons/Hamburger-menu.png" class="menu-btn"/>
+        <div data-menu="hide" id="hamburger-menu" class="drop-down-menu">
+          <button type="submit" class="btn white btn">Home</button>
+          <button type="submit" class="btn white btn lastOfType">Journeys</button>
+          <button type="submit" class="btn white btn hideDesktop">My Account</button>
+          <button type="submit" class="btn white btn hideDesktop">Log Out</button>
+        </div>
+      </div>
+      <h1 class="header1 semibold white primary head">MVCuisine</h1>
+    </div>
+    <div class="account">
+      <p class="para1 white light type5 account-name">Hi Josh!</p><img src="../images/icons/Josh.png" class="account-img"/>
+      <div class="arrow-down"></div>
+      <div data-account="hide" id="account-items" class="account-menu">
+        <button type="submit" class="btn white buttons">My Account</button>
+        <button type="submit" class="btn white buttons">Log Out</button>
+      </div>
+    </div>
+  </header>
+  <div class="body-wrapper">
+    <div class="top-section">
+      <div class="food-selection">
+        <div class="button-group">
+          <button type="submit" class="btn red btn-select">American</button>
+          <div data-menu="hide" id="menu-items" class="selector">
+            <button type="submit" class="btn red btns btn1">American</button>
+            <button type="submit" class="btn white btns btn2">Korean</button>
+            <button type="submit" class="btn white btns btn3">Italian</button>
+            <button type="submit" class="btn white btns btn4">Mexican</button>
+            <button type="submit" class="btn white btns btn5">Japanese</button>
+          </div>
+        </div>
+        <div class="sort-drop-down">
+          <button type="submit" class="btn white main-btn">Most Recent</button>
+          <div data-order="hide" id="order-by" class="ordering">
+            <button type="submit" class="btn white order-btn highlighted-btn">Most Recent</button>
+            <button type="submit" class="btn white order-btn">Highest Rated</button>
+            <button type="submit" class="btn white order-btn">Top Reviewed</button>
+          </div>
+        </div>
+      </div>
+      <div class="lower-top-section">
+        <div class="main-container">
+          <div class="main-circle parent">
+            <div data-percent="10" class="progress newtest"><img src="../images/icons/Hamburger.png" class="image child"/></div>
+          </div>
+          <div class="para-container">
+            <p class="para1 dark-gray regular type4 head-paragraph">American <span id="blah-percentage"></span></p>
+            <p class="para1 dark-gray light type1 body-paragraph">One characteristic of American cooking is the fusion of multiple ethnic or regional approaches into completely new cooking styles.</p>
+          </div>
+        </div>
+        <div class="buttons-group">
+          <button type="submit" disabled="disabled" class="btn disabled duration-btn">Duration: 3 weeks</button>
+          <button type="submit" class="btn red follow-btn">Continue</button>
+        </div>
+      </div>
+    </div>
+    <div class="accordion">
+      <div class="accordion-section">
+        <div class="accordion-title-bar"><img src="../images/icons/Blue-checkmark.png" class="complete-checkmark"/><a href="#accordion-1" class="accordion-section-title">All-American Bacon Cheese Burger</a></div>
+        <div id="accordion-1" class="accordion-section-content">
+          <div class="completed-info">
+            <div class="restaurant-container">
+              <p class="para1 semibold type6 black restaurant-name">Frankie&#39;s</p>
+              <div class="ratings"><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Hollow-gold-star.png" class="stars"/>
+                <p class="para1 regular light-gray type6 reviews">1256 reviews</p>
+              </div>
+              <div class="price">
+                <p class="para1 regular light-gray type6 price-range">&#36;&#36; - Burgers</p>
+              </div>
+              <div class="address">
+                <p class="para1 type6 regular black">66 Mint St.</p>
+                <p class="para1 type6 regular black">San Francisco, CA 94103</p>
+              </div>
+            </div>
+            <div class="main-square">
+              <div class="day-time">
+                <p class="para1 black type6 regular today">Today</p>
+                <p class="para1 type6 light time">8:00 am - 9:00 pm</p>
+              </div>
+              <p class="para1 green type6 light open-text">Open now</p>
+              <div class="phone-number"><img src="../images/icons/Phone.png" class="src1"/><a href="tel:1-510-653-3394" class="number">(510) 653-3394</a></div>
+              <div class="email"><img src="../images/icons/Mail.png" class="src1"/><a href="https://frankiesburgers.com" class="email-address">frankiesburgers.com</a></div>
+            </div>
+            <div class="breakpoint"></div>
+            <div class="image-container"><img src="../images/icons/Pig.png" class="content-img img-paragraph"/>
+              <div class="paragraph-text">
+                <blockquote></blockquote>
+                <p class="para1 black regular type6 img-paragraph">One of the BEST Japanese restaurants I have ever been to. The food is amazing in both quality and flavor, the ambiance is unlike NYC, very spacious and...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-section">
+        <div class="accordion-title-bar">
+          <div class="circle-within"><span class="number">2</span></div><a href="#accordion-2" class="accordion-section-title">Traditional American Desserts</a>
+        </div>
+        <div id="accordion-2" class="accordion-section-content">
+          <div class="completed-info">
+            <div class="restaurant-container">
+              <p class="para1 semibold type6 black restaurant-name">Frankie&#39;s</p>
+              <div class="ratings"><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Hollow-gold-star.png" class="stars"/>
+                <p class="para1 regular light-gray type6 reviews">1256 reviews</p>
+              </div>
+              <div class="price">
+                <p class="para1 regular light-gray type6 price-range">&#36;&#36; - Burgers</p>
+              </div>
+              <div class="address">
+                <p class="para1 type6 regular black">66 Mint St.</p>
+                <p class="para1 type6 regular black">San Francisco, CA 94103</p>
+              </div>
+            </div>
+            <div class="main-square">
+              <div class="day-time">
+                <p class="para1 black type6 regular today">Today</p>
+                <p class="para1 type6 light time">8:00 am - 9:00 pm</p>
+              </div>
+              <p class="para1 green type6 light open-text">Open now</p>
+              <div class="phone-number"><img src="../images/icons/Phone.png" class="src1"/><a href="tel:1-510-653-3394" class="number">(510) 653-3394</a></div>
+              <div class="email"><img src="../images/icons/Mail.png" class="src1"/><a href="https://frankiesburgers.com" class="email-address">frankiesburgers.com</a></div>
+            </div>
+            <div class="breakpoint"></div>
+            <div class="image-container"><img src="../images/icons/Pig.png" class="content-img img-paragraph"/>
+              <div class="paragraph-text">
+                <blockquote></blockquote>
+                <p class="para1 black regular type6 img-paragraph">One of the BEST Japanese restaurants I have ever been to. The food is amazing in both quality and flavor, the ambiance is unlike NYC, very spacious and...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-section">
+        <div class="accordion-title-bar">
+          <div class="circle-within"><span class="number">3</span></div><a href="#accordion-3" class="accordion-section-title">San Francisco Sourdough Bread</a>
+        </div>
+        <div id="accordion-3" class="accordion-section-content">
+          <div class="completed-info">
+            <div class="restaurant-container">
+              <p class="para1 semibold type6 black restaurant-name">Frankie&#39;s</p>
+              <div class="ratings"><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Hollow-gold-star.png" class="stars"/>
+                <p class="para1 regular light-gray type6 reviews">1256 reviews</p>
+              </div>
+              <div class="price">
+                <p class="para1 regular light-gray type6 price-range">&#36;&#36; - Burgers</p>
+              </div>
+              <div class="address">
+                <p class="para1 type6 regular black">66 Mint St.</p>
+                <p class="para1 type6 regular black">San Francisco, CA 94103</p>
+              </div>
+            </div>
+            <div class="main-square">
+              <div class="day-time">
+                <p class="para1 black type6 regular today">Today</p>
+                <p class="para1 type6 light time">8:00 am - 9:00 pm</p>
+              </div>
+              <p class="para1 green type6 light open-text">Open now</p>
+              <div class="phone-number"><img src="../images/icons/Phone.png" class="src1"/><a href="tel:1-510-653-3394" class="number">(510) 653-3394</a></div>
+              <div class="email"><img src="../images/icons/Mail.png" class="src1"/><a href="https://frankiesburgers.com" class="email-address">frankiesburgers.com</a></div>
+            </div>
+            <div class="breakpoint"></div>
+            <div class="image-container"><img src="../images/icons/Pig.png" class="content-img img-paragraph"/>
+              <div class="paragraph-text">
+                <blockquote></blockquote>
+                <p class="para1 black regular type6 img-paragraph">One of the BEST Japanese restaurants I have ever been to. The food is amazing in both quality and flavor, the ambiance is unlike NYC, very spacious and...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-section">
+        <div class="accordion-title-bar">				
+          <div class="circle-within"><span class="number">4</span></div><a href="#accordion-4" class="accordion-section-title">New York Style Buffalo Wings</a>
+        </div>
+        <div id="accordion-4" class="accordion-section-content">
+          <div class="completed-info">
+            <div class="restaurant-container">
+              <p class="para1 semibold type6 black restaurant-name">Frankie&#39;s</p>
+              <div class="ratings"><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Hollow-gold-star.png" class="stars"/>
+                <p class="para1 regular light-gray type6 reviews">1256 reviews</p>
+              </div>
+              <div class="price">
+                <p class="para1 regular light-gray type6 price-range">&#36;&#36; - Burgers</p>
+              </div>
+              <div class="address">
+                <p class="para1 type6 regular black">66 Mint St.</p>
+                <p class="para1 type6 regular black">San Francisco, CA 94103</p>
+              </div>
+            </div>
+            <div class="main-square">
+              <div class="day-time">
+                <p class="para1 black type6 regular today">Today</p>
+                <p class="para1 type6 light time">8:00 am - 9:00 pm</p>
+              </div>
+              <p class="para1 green type6 light open-text">Open now</p>
+              <div class="phone-number"><img src="../images/icons/Phone.png" class="src1"/><a href="tel:1-510-653-3394" class="number">(510) 653-3394</a></div>
+              <div class="email"><img src="../images/icons/Mail.png" class="src1"/><a href="https://frankiesburgers.com" class="email-address">frankiesburgers.com</a></div>
+            </div>
+            <div class="breakpoint"></div>
+            <div class="image-container"><img src="../images/icons/Pig.png" class="content-img img-paragraph"/>
+              <div class="paragraph-text">
+                <blockquote></blockquote>
+                <p class="para1 black regular type6 img-paragraph">One of the BEST Japanese restaurants I have ever been to. The food is amazing in both quality and flavor, the ambiance is unlike NYC, very spacious and...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-section">
+        <div class="accordion-title-bar">
+          <div class="circle-within"><span class="number">5</span></div><a href="#accordion-5" class="accordion-section-title">Smoked Barbecue Ribs</a>
+        </div>
+        <div id="accordion-5" class="accordion-section-content">
+          <div class="completed-info">
+            <div class="restaurant-container">
+              <p class="para1 semibold type6 black restaurant-name">Frankie&#39;s</p>
+              <div class="ratings"><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Hollow-gold-star.png" class="stars"/>
+                <p class="para1 regular light-gray type6 reviews">1256 reviews</p>
+              </div>
+              <div class="price">
+                <p class="para1 regular light-gray type6 price-range">&#36;&#36; - Burgers</p>
+              </div>
+              <div class="address">
+                <p class="para1 type6 regular black">66 Mint St.</p>
+                <p class="para1 type6 regular black">San Francisco, CA 94103</p>
+              </div>
+            </div>
+            <div class="main-square">
+              <div class="day-time">
+                <p class="para1 black type6 regular today">Today</p>
+                <p class="para1 type6 light time">8:00 am - 9:00 pm</p>
+              </div>
+              <p class="para1 green type6 light open-text">Open now</p>
+              <div class="phone-number"><img src="../images/icons/Phone.png" class="src1"/><a href="tel:1-510-653-3394" class="number">(510) 653-3394</a></div>
+              <div class="email"><img src="../images/icons/Mail.png" class="src1"/><a href="https://frankiesburgers.com" class="email-address">frankiesburgers.com</a></div>
+            </div>
+            <div class="breakpoint"></div>
+            <div class="image-container"><img src="../images/icons/Pig.png" class="content-img img-paragraph"/>
+              <div class="paragraph-text">
+                <blockquote></blockquote>
+                <p class="para1 black regular type6 img-paragraph">One of the BEST Japanese restaurants I have ever been to. The food is amazing in both quality and flavor, the ambiance is unlike NYC, very spacious and...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-section">
+        <div class="accordion-title-bar">			
+          <div class="circle-within"><span class="number">6</span></div><a href="#accordion-6" class="accordion-section-title">Chicago Style Pizza</a>
+        </div>
+        <div id="accordion-6" class="accordion-section-content">
+          <div class="completed-info">
+            <div class="restaurant-container">
+              <p class="para1 semibold type6 black restaurant-name">Frankie&#39;s</p>
+              <div class="ratings"><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Gold-star.png" class="stars"/><img src="../images/icons/Hollow-gold-star.png" class="stars"/>
+                <p class="para1 regular light-gray type6 reviews">1256 reviews</p>
+              </div>
+              <div class="price">
+                <p class="para1 regular light-gray type6 price-range">&#36;&#36; - Burgers</p>
+              </div>
+              <div class="address">
+                <p class="para1 type6 regular black">66 Mint St.</p>
+                <p class="para1 type6 regular black">San Francisco, CA 94103</p>
+              </div>
+            </div>
+            <div class="main-square">
+              <div class="day-time">
+                <p class="para1 black type6 regular today">Today</p>
+                <p class="para1 type6 light time">8:00 am - 9:00 pm</p>
+              </div>
+              <p class="para1 green type6 light open-text">Open now</p>
+              <div class="phone-number"><img src="../images/icons/Phone.png" class="src1"/><a href="tel:1-510-653-3394" class="number">(510) 653-3394</a></div>
+              <div class="email"><img src="../images/icons/Mail.png" class="src1"/><a href="https://frankiesburgers.com" class="email-address">frankiesburgers.com</a></div>
+            </div>
+            <div class="breakpoint"></div>
+            <div class="image-container"><img src="../images/icons/Pig.png" class="content-img img-paragraph"/>
+              <div class="paragraph-text">
+                <blockquote></blockquote>
+                <p class="para1 black regular type6 img-paragraph">One of the BEST Japanese restaurants I have ever been to. The food is amazing in both quality and flavor, the ambiance is unlike NYC, very spacious and...</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../scripts/global.js"></script>
+  <script src="../scripts/main.js"></script>
+</body>
