@@ -60,7 +60,6 @@ select {
 }
 .navbar.navbar-default a {
   color: white !important;
-  font-weight: bold;
 }
 .navbar.navbar-default .navbar-toggle {
   border-color: transparent;
@@ -120,11 +119,6 @@ select {
 .btn {
   border-radius: 0;
 }
-.btn-logos{
-  border: 1px solid;
-  margin-right: 7px;
-  margin-left: 7px;
-}
 .btn-primary {
   background-color: #fe5140;
   border-color: #fe6859;
@@ -150,9 +144,6 @@ select {
 /****************************
  * Login
  ***************************/
-.login-btn{
-  background-color: orange;
-}
 .login-window {
   width: 250px;
   border: 1px solid #d3d3d3;
@@ -450,7 +441,6 @@ footer .footer-images .aowp {
   text-align: center;
   padding: 5px;
   padding-top: 30px;
-  margin-top: 10px;
   min-height: 100px;
   color: white;
   font-weight: bold;
@@ -464,7 +454,6 @@ footer .footer-images .aowp {
 }
 .journey .food-type-container .description {
   background-color: white;
-  color: black;
   min-height: 130px;
   padding: 8px;
   font-size: 12px;
@@ -625,9 +614,17 @@ footer .footer-images .aowp {
   margin-bottom: 5px;
   border-top-color: #a8a8a8;
 }
-.journey-overview-items .ft-item .fti-body .contact .r-status {
+.journey-overview-items .ft-item .fti-body .contact  {
   font-weight: bold;
 }
+
+span.r-status{
+  font-weight:normal;
+}
+span.r-rating{
+  border-color:gold;
+}
+
 .journey-overview-items .ft-item .fti-body .contact .r-status.open {
   color: green;
 }
@@ -651,6 +648,7 @@ footer .footer-images .aowp {
 .journey-overview-items .fti-body .r-rating span.star-active:before {
   content: "\f005";
   color: #e3cf7a;
+  border-color:#e3cf7a;
 }
 /* Mobile adjustments */
 @media (max-width: 700px) {
@@ -721,7 +719,7 @@ footer .footer-images .aowp {
  * Login
  ***************************/
 .login-window {
-  width: 200px;
+  width: 250px;
   border: 1px solid #d3d3d3;
   padding: 10px 5px 10px 5px;
   text-align: center;
@@ -731,7 +729,7 @@ footer .footer-images .aowp {
   background-color: white;
   -webkit-box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0);
+  box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0.75);
   z-index: 100;
 }
 .login-window .sprites {
@@ -746,7 +744,7 @@ footer .footer-images .aowp {
   border-bottom: 10px solid white;
   position: absolute;
   top: -10px;
-  right: 20px;
+  right: 10px;
 }
 /* Mobile adjustments */
 @media (max-width: 700px) {
@@ -920,6 +918,7 @@ footer .footer-images .aowp {
   font-weight: bold;
   margin-left: 8px;
 }
+
 .journey-challenge .challenge .ch-body {
   margin-top: 5px;
   padding-top: 5px;
@@ -1005,6 +1004,7 @@ footer .footer-images .aowp {
     margin-bottom: 5px;
   }
 }
+
 /****************************
  * Journey Screen
  ***************************/
@@ -1096,7 +1096,7 @@ footer .footer-images .aowp {
   min-height: 120px;
 }
 .journey-overview .food-type-overview .ft-progress .circleContainer {
-  background-color: #fe6859;
+  background-color: lightpink;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../../images/american-food-icon.png), linear-gradient(126deg, transparent 50%, #fe5140 50%), linear-gradient(90deg, #fe5140 50%, transparent 50%);
@@ -1105,7 +1105,7 @@ footer .footer-images .aowp {
   background-color: black;
 }
 .journey-overview .food-type-overview .ft-description {
-  max-width: 500px;
+  max-width: 300px;
 }
 .journey-overview .food-type-overview .ft-description .st-progress {
   color: #a8a8a8;
@@ -1119,6 +1119,11 @@ footer .footer-images .aowp {
   background-color: #f1f1f1;
   padding: 6px;
   margin-bottom: 5px;
+  width:105%
+}
+span.r-wtime{
+  font-weight: bold;
+
 }
 .journey-overview .food-types-widget .food-type-buttons,
 .journey-overview .food-types-widget .food-type-dropdown {
@@ -1153,6 +1158,7 @@ footer .footer-images .aowp {
 }
 .journey-overview-items .ft-item .fti-title {
   margin-left: 15px;
+  font-size:20px;
 }
 .journey-overview-items .ft-item .fti-body {
   margin-top: 5px;
@@ -1190,9 +1196,22 @@ footer .footer-images .aowp {
   margin-bottom: 5px;
   border-top-color: #a8a8a8;
 }
-.journey-overview-items .ft-item .fti-body .contact .r-status {
+.journey-overview-items .ft-item .fti-body .contact  {
   font-weight: bold;
 }
+.btn-primary{
+  width: 105%;
+}
+#grad1
+{
+  width: 20%;
+  height: 50%;
+  background-size: cover;
+  background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+  opacity: .6;
+}
+
+
 .journey-overview-items .ft-item .fti-body .contact .r-status.open {
   color: green;
 }
@@ -1281,20 +1300,4 @@ footer .footer-images .aowp {
   .journey-overview-items {
     padding: 0;
   }
-}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
-  background-color:#fe6859 ;
-}
-
-
-.dropdown-menu{
-  padding: 20px 0;
-  text-align: center;
-  box-shadow: 0 8px 6px -6px black;
-}
-.navbar-pad{
-  padding-left: 0px;
-}
-.navbar-brand{
-  padding-left: 5px;
 }
