@@ -1,0 +1,543 @@
+{
+  "region": {
+    "span": {
+      "latitude_delta": 0.045623930000004975,
+      "longitude_delta": 0.04976082314280461
+    },
+    "center": {
+      "latitude": 37.78509265,
+      "longitude": -122.419389844026
+    }
+  },
+  "total": 549,
+  "businesses": [
+    {
+      "is_claimed": true,
+      "rating": 4,
+      "mobile_url": "http://m.yelp.com/biz/marlowe-san-francisco-2",
+      "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+      "review_count": 1642,
+      "name": "Marlowe",
+      "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+      "url": "http://www.yelp.com/biz/marlowe-san-francisco-2",
+      "categories": [
+        [
+          "American (New)",
+          "newamerican"
+        ],
+        [
+          "Brasseries",
+          "brasseries"
+        ]
+      ],
+      "menu_date_updated": 1442067312,
+      "phone": "4157771413",
+      "snippet_text": "It's a shame that I only recently discovered Marlowe's brunch. My big sis took me here for a birthday treat and we both thoroughly enjoyed everything....",
+      "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/uweSiOf0XBB4BPk_ibHVyg/ms.jpg",
+      "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/NIecF8lOxf2XWhAmHhh9rQ/ms.jpg",
+      "display_phone": "+1-415-777-1413",
+      "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+      "menu_provider": "single_platform",
+      "id": "marlowe-san-francisco-2",
+      "is_closed": false,
+      "location": {
+        "cross_streets": "5th St & 4th St",
+        "city": "San Francisco",
+        "display_address": [
+          "500 Brannan St",
+          "SoMa",
+          "San Francisco, CA 94107"
+        ],
+        "geo_accuracy": 9.5,
+        "neighborhoods": [
+          "SoMa"
+        ],
+        "postal_code": "94107",
+        "country_code": "US",
+        "address": [
+          "500 Brannan St"
+        ],
+        "coordinate": {
+          "latitude": 37.7783200510611,
+          "longitude": -122.396771288052
+        },
+        "state_code": "CA"
+      }
+    },
+    {
+      "is_claimed": false,
+      "rating": 4.5,
+      "mobile_url": "http://m.yelp.com/biz/rove-kitchen-san-francisco",
+      "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+      "review_count": 110,
+      "name": "Rove Kitchen",
+      "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+      "url": "http://www.yelp.com/biz/rove-kitchen-san-francisco",
+      "categories": [
+        [
+          "American (New)",
+          "newamerican"
+        ],
+        [
+          "Beer Bar",
+          "beerbar"
+        ],
+        [
+          "Burgers",
+          "burgers"
+        ]
+      ],
+      "phone": "4155677466",
+      "snippet_text": "Best fried chicken sandwich I've ever had! I think the key was butter, but I'd rather not know. Anyway, I'll be back..\n\nVery small seating area so be...",
+      "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/cmxc2lnlpIFFvFIhyfHGEA/ms.jpg",
+      "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/ir0sVgOhPZbc2aWQxlwR_Q/ms.jpg",
+      "display_phone": "+1-415-567-7466",
+      "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+      "id": "rove-kitchen-san-francisco",
+      "is_closed": false,
+      "location": {
+        "cross_streets": "Jones St & Ophir Aly",
+        "city": "San Francisco",
+        "display_address": [
+          "678 Post St",
+          "Lower Nob Hill",
+          "San Francisco, CA 94109"
+        ],
+        "geo_accuracy": 9.5,
+        "neighborhoods": [
+          "Lower Nob Hill"
+        ],
+        "postal_code": "94109",
+        "country_code": "US",
+        "address": [
+          "678 Post St"
+        ],
+        "coordinate": {
+          "latitude": 37.7877664572471,
+          "longitude": -122.412939658872
+        },
+        "state_code": "CA"
+      }
+    },
+    {
+      "is_claimed": true,
+      "rating": 4.5,
+      "mobile_url": "http://m.yelp.com/biz/gary-danko-san-francisco",
+      "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+      "review_count": 4283,
+      "name": "Gary Danko",
+      "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+      "url": "http://www.yelp.com/biz/gary-danko-san-francisco",
+      "categories": [
+        [
+          "American (New)",
+          "newamerican"
+        ]
+      ],
+      "menu_date_updated": 1441955932,
+      "phone": "4157492060",
+      "snippet_text": "Gary Danko is an experience, and that is why you should go here.  Be prepared to spend a pretty penny though.  It's a great #treatyoself restaurant, so we...",
+      "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/QAIvzEa9Cy9ptrJydljzcw/ms.jpg",
+      "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/eoGUBrodQUj-6oi9RG5STg/ms.jpg",
+      "display_phone": "+1-415-749-2060",
+      "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+      "menu_provider": "single_platform",
+      "id": "gary-danko-san-francisco",
+      "is_closed": false,
+      "location": {
+        "city": "San Francisco",
+        "display_address": [
+          "800 N Point St",
+          "Russian Hill",
+          "San Francisco, CA 94109"
+        ],
+        "geo_accuracy": 8,
+        "neighborhoods": [
+          "Russian Hill",
+          "Fisherman's Wharf"
+        ],
+        "postal_code": "94109",
+        "country_code": "US",
+        "address": [
+          "800 N Point St"
+        ],
+        "coordinate": {
+          "latitude": 37.80587,
+          "longitude": -122.42058
+        },
+        "state_code": "CA"
+      }
+    },
+    {
+      "is_claimed": true,
+      "rating": 4.5,
+      "mobile_url": "http://m.yelp.com/biz/causwells-san-francisco-5",
+      "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+      "review_count": 306,
+      "name": "Causwells",
+      "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+      "url": "http://www.yelp.com/biz/causwells-san-francisco-5",
+      "categories": [
+        [
+          "American (New)",
+          "newamerican"
+        ]
+      ],
+      "menu_date_updated": 1442207273,
+      "phone": "4154476081",
+      "snippet_text": "I've heard so much about their burger amongst many things. It's true, their burger was delectable. Crispy edges of the patties with a healthy serving of...",
+      "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/S7i3-Ln48rEqbRZglRYqJA/ms.jpg",
+      "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/4unJ83fxnv0-2OmBOypZ-A/ms.jpg",
+      "display_phone": "+1-415-447-6081",
+      "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+      "menu_provider": "single_platform",
+      "id": "causwells-san-francisco-5",
+      "is_closed": false,
+      "location": {
+        "cross_streets": "Divisadero St & Scott St",
+        "city": "San Francisco",
+        "display_address": [
+          "2346 Chestnut St",
+          "Marina/Cow Hollow",
+          "San Francisco, CA 94123"
+        ],
+        "geo_accuracy": 8,
+        "neighborhoods": [
+          "Marina/Cow Hollow"
+        ],
+        "postal_code": "94123",
+        "country_code": "US",
+        "address": [
+          "2346 Chestnut St"
+        ],
+        "coordinate": {
+          "latitude": 37.8001342713833,
+          "longitude": -122.441983893514
+        },
+        "state_code": "CA"
+      }
+    },
+    {
+      "is_claimed": true,
+      "rating": 4.5,
+      "mobile_url": "http://m.yelp.com/biz/pianofight-san-francisco",
+      "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+      "review_count": 72,
+      "name": "PianoFight",
+      "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+      "url": "http://www.yelp.com/biz/pianofight-san-francisco",
+      "categories": [
+        [
+          "American (New)",
+          "newamerican"
+        ],
+        [
+          "Bars",
+          "bars"
+        ],
+        [
+          "Performing Arts",
+          "theater"
+        ]
+      ],
+      "phone": "4158163691",
+      "snippet_text": "Where did this place come from? It hosts cool live comedy, music and theater performances, with a great selection of beer/alcohol, and really good food! I...",
+      "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/zutsxO9zO5rQIROYrx7IBw/ms.jpg",
+      "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/JRV9mxVGIT8WIl7sFdLbUQ/ms.jpg",
+      "display_phone": "+1-415-816-3691",
+      "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+      "id": "pianofight-san-francisco",
+      "is_closed": false,
+      "location": {
+        "cross_streets": "Eddy St & Turk St",
+        "city": "San Francisco",
+        "display_address": [
+          "144 Taylor St",
+          "Tenderloin",
+          "San Francisco, CA 94102"
+        ],
+        "geo_accuracy": 9.5,
+        "neighborhoods": [
+          "Tenderloin",
+          "Union Square"
+        ],
+        "postal_code": "94102",
+        "country_code": "US",
+        "address": [
+          "144 Taylor St"
+        ],
+        "coordinate": {
+          "latitude": 37.7838704221414,
+          "longitude": -122.410740837442
+        },
+        "state_code": "CA"
+      }
+    },
+    {
+      "is_claimed": true,
+      "rating": 4.5,
+      "mobile_url": "http://m.yelp.com/biz/stones-throw-san-francisco-2",
+      "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+      "review_count": 513,
+      "name": "Stones Throw",
+      "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+      "url": "http://www.yelp.com/biz/stones-throw-san-francisco-2",
+      "categories": [
+        [
+          "American (New)",
+          "newamerican"
+        ]
+      ],
+      "menu_date_updated": 1442199361,
+      "phone": "4157962901",
+      "snippet_text": "AMAZING.\nFirst, you don't sit on top of each other here. The tables had a decent distance between them. \nI'll definitely come back. Thinking about bringing...",
+      "image_url": "http://s3-media3.fl.yelpcdn.com/bphoto/xZUmEvqRdd_2PHYa3pHBmw/ms.jpg",
+      "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/Ozp4wlnwd7kAA-JoUcJmLw/ms.jpg",
+      "display_phone": "+1-415-796-2901",
+      "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+      "menu_provider": "single_platform",
+      "id": "stones-throw-san-francisco-2",
+      "is_closed": false,
+      "location": {
+        "cross_streets": "Green St & Vallejo St",
+        "city": "San Francisco",
+        "display_address": [
+          "1896 Hyde St",
+          "Russian Hill",
+          "San Francisco, CA 94109"
+        ],
+        "geo_accuracy": 8,
+        "neighborhoods": [
+          "Russian Hill"
+        ],
+        "postal_code": "94109",
+        "country_code": "US",
+        "address": [
+          "1896 Hyde St"
+        ],
+        "coordinate": {
+          "latitude": 37.798122,
+          "longitude": -122.418579
+        },
+        "state_code": "CA"
+      }
+    },
+    {
+      "is_claimed": true,
+      "rating": 4.5,
+      "mobile_url": "http://m.yelp.com/biz/state-bird-provisions-san-francisco",
+      "rating_img_url": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/99493c12711e/ico/stars/v1/stars_4_half.png",
+      "review_count": 1490,
+      "name": "State Bird Provisions",
+      "rating_img_url_small": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/a5221e66bc70/ico/stars/v1/stars_small_4_half.png",
+      "url": "http://www.yelp.com/biz/state-bird-provisions-san-francisco",
+      "categories": [
+        [
+          "American (New)",
+          "newamerican"
+        ],
+        [
+          "Tapas/Small Plates",
+          "tapasmallplates"
+        ]
+      ],
+      "menu_date_updated": 1442097786,
+      "phone": "4157951272",
+      "snippet_text": "Where to begin... State Bird Provisions was pretty mind-boggling delicious. \n\nStandouts:\n-- Squash 'mochi': this dish just takes mochi to another level. It...",
+      "image_url": "http://s3-media2.fl.yelpcdn.com/bphoto/gm4-bN2OvSywW2sT60Msiw/ms.jpg",
+      "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/UoFYK2m_fOxvA44XcWu-Tw/ms.jpg",
+      "display_phone": "+1-415-795-1272",
+      "rating_img_url_large": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/9f83790ff7f6/ico/stars/v1/stars_large_4_half.png",
+      "menu_provider": "single_platform",
+      "id": "state-bird-provisions-san-francisco",
+      "is_closed": false,
+      "location": {
+        "cross_streets": "Ofarrell St & Geary Blvd",
+        "city": "San Francisco",
+        "display_address": [
+          "1529 Fillmore St",
+          "Western Addition",
+          "San Francisco, CA 94115"
+        ],
+        "geo_accuracy": 9.5,
+        "neighborhoods": [
+          "Western Addition"
+        ],
+        "postal_code": "94115",
+        "country_code": "US",
+        "address": [
+          "1529 Fillmore St"
+        ],
+        "coordinate": {
+          "latitude": 37.78374,
+          "longitude": -122.433005
+        },
+        "state_code": "CA"
+      }
+    },
+    {
+      "is_claimed": true,
+      "rating": 4,
+      "mobile_url": "http://m.yelp.com/biz/hops-and-hominy-san-francisco",
+      "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+      "review_count": 1135,
+      "name": "Hops & Hominy",
+      "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+      "url": "http://www.yelp.com/biz/hops-and-hominy-san-francisco",
+      "categories": [
+        [
+          "American (New)",
+          "newamerican"
+        ],
+        [
+          "Southern",
+          "southern"
+        ]
+      ],
+      "menu_date_updated": 1445751553,
+      "phone": "4153736341",
+      "snippet_text": "One of my favorite places. Every time we have people in town, this is the spot we chose to bring them.\n\nWe showed up for our reservation (always a wait so...",
+      "image_url": "http://s3-media1.fl.yelpcdn.com/bphoto/zo92aZkQtZOieZsa8JfqNA/ms.jpg",
+      "snippet_image_url": "http://s3-media2.fl.yelpcdn.com/photo/zO6Tir6N1H5CwjDTskzyQg/ms.jpg",
+      "display_phone": "+1-415-373-6341",
+      "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+      "menu_provider": "single_platform",
+      "id": "hops-and-hominy-san-francisco",
+      "is_closed": false,
+      "location": {
+        "cross_streets": "Grant Ave",
+        "city": "San Francisco",
+        "display_address": [
+          "1 Tillman Pl",
+          "Union Square",
+          "San Francisco, CA 94108"
+        ],
+        "geo_accuracy": 9.5,
+        "neighborhoods": [
+          "Union Square",
+          "Financial District"
+        ],
+        "postal_code": "94108",
+        "country_code": "US",
+        "address": [
+          "1 Tillman Pl"
+        ],
+        "coordinate": {
+          "latitude": 37.7892737258644,
+          "longitude": -122.405591253967
+        },
+        "state_code": "CA"
+      }
+    },
+    {
+      "is_claimed": true,
+      "rating": 4,
+      "mobile_url": "http://m.yelp.com/biz/nopa-san-francisco",
+      "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+      "review_count": 4085,
+      "name": "Nopa",
+      "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+      "url": "http://www.yelp.com/biz/nopa-san-francisco",
+      "categories": [
+        [
+          "American (New)",
+          "newamerican"
+        ],
+        [
+          "Modern European",
+          "modern_european"
+        ]
+      ],
+      "menu_date_updated": 1441965195,
+      "phone": "4158648643",
+      "snippet_text": "Nopa is really great, there's no contesting that.\n\nAt 10:40pm on a Saturday, my buddy and I thought we were going to have to eat corner store snacks, until...",
+      "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/6ALj6fk9_kRQxMgD2s7gKw/ms.jpg",
+      "snippet_image_url": "http://s3-media4.fl.yelpcdn.com/photo/Zl7WI9vHGUua8WVUCBnpYg/ms.jpg",
+      "display_phone": "+1-415-864-8643",
+      "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+      "menu_provider": "single_platform",
+      "id": "nopa-san-francisco",
+      "is_closed": false,
+      "location": {
+        "cross_streets": "Fell St & Hayes St",
+        "city": "San Francisco",
+        "display_address": [
+          "560 Divisadero St",
+          "Alamo Square",
+          "San Francisco, CA 94117"
+        ],
+        "geo_accuracy": 9.5,
+        "neighborhoods": [
+          "Alamo Square"
+        ],
+        "postal_code": "94117",
+        "country_code": "US",
+        "address": [
+          "560 Divisadero St"
+        ],
+        "coordinate": {
+          "latitude": 37.774883043712,
+          "longitude": -122.43755848222
+        },
+        "state_code": "CA"
+      }
+    },
+    {
+      "is_claimed": true,
+      "rating": 4,
+      "mobile_url": "http://m.yelp.com/biz/kitchen-story-san-francisco",
+      "rating_img_url": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/c2f3dd9799a5/ico/stars/v1/stars_4.png",
+      "review_count": 1383,
+      "name": "Kitchen Story",
+      "rating_img_url_small": "http://s3-media4.fl.yelpcdn.com/assets/2/www/img/f62a5be2f902/ico/stars/v1/stars_small_4.png",
+      "url": "http://www.yelp.com/biz/kitchen-story-san-francisco",
+      "categories": [
+        [
+          "American (New)",
+          "newamerican"
+        ],
+        [
+          "Breakfast & Brunch",
+          "breakfast_brunch"
+        ],
+        [
+          "Asian Fusion",
+          "asianfusion"
+        ]
+      ],
+      "menu_date_updated": 1443607528,
+      "phone": "4155254905",
+      "snippet_text": "We came here for lunch. Wow, portions were large, service was great, food looked and tasted wonderful. They were not too busy on a weekday at lunch time. We...",
+      "image_url": "http://s3-media4.fl.yelpcdn.com/bphoto/DgDd0A3nI-mMi35jZIlyxg/ms.jpg",
+      "snippet_image_url": "http://s3-media3.fl.yelpcdn.com/photo/UdnE8TSIrpM96fXLmF-6KQ/ms.jpg",
+      "display_phone": "+1-415-525-4905",
+      "rating_img_url_large": "http://s3-media2.fl.yelpcdn.com/assets/2/www/img/ccf2b76faa2c/ico/stars/v1/stars_large_4.png",
+      "menu_provider": "eat24",
+      "id": "kitchen-story-san-francisco",
+      "is_closed": false,
+      "location": {
+        "cross_streets": "Dehon St & Sanchez St",
+        "city": "San Francisco",
+        "display_address": [
+          "3499 16th St",
+          "Castro",
+          "San Francisco, CA 94114"
+        ],
+        "geo_accuracy": 9.5,
+        "neighborhoods": [
+          "Castro"
+        ],
+        "postal_code": "94114",
+        "country_code": "US",
+        "address": [
+          "3499 16th St"
+        ],
+        "coordinate": {
+          "latitude": 37.7643545,
+          "longitude": -122.4308676
+        },
+        "state_code": "CA"
+      }
+    }
+  ]
+}

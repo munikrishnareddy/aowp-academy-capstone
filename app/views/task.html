@@ -1,0 +1,49 @@
+<div class="ft-item">
+	<div class="table">
+	    <div>
+	        <div class="fti-header row collapsed" data-toggle="collapse" data-target="#item-{{info.id}}">
+	            <span class="fa-stack fa-lg text-center mov-rig">
+	                <i class="fa fa-stack-2x mov-bot medium fa-circle"></i>
+	                <i class="fa-stack-1x fti-number">{{info.id}}</i>
+	            </span>
+	            <span class="fti-title">{{info.name}}</span>
+	        </div>
+	    </div>
+	    <div class="row collapse" id="item-{{info.id}}">
+	        <div class="fti-body">
+	            <div class="col-md-3 summary">
+	                <div>
+	                    <h3 class="r-name">{{info.restaurantInfo.name}}</h3>
+	                    <span class="r-rating" style="background-image:url('{{info.restaurantInfo.rating_img_url_small}}')"></span>
+	                    <span class="r-reviews">{{info.restaurantInfo.review_count}} reviews</span>
+	                    <div ng-repeat="addr in info.restaurantInfo.location.address">
+	                    
+	                    	<span class="r-address">{{addr}}</span>
+	                    </div>
+	                    
+	                </div>
+	            </div>
+	            <div class="col-md-4 contact">
+	                <div class="well">
+	                    <span class="r-wtime">Today 8:00 am - 9:00 pm<br></span>
+	                    <span class="r-status open">Open now</span>
+	                    <hr>
+                            <span class="r-phone" ng-show="info.restaurantInfo.display_phone"><a><i class="fa fa-phone"></i> {{info.restaurantInfo.display_phone}}</a></span>
+                            <span class="r-phone" ng-hide="info.restaurantInfo.display_phone"><a><i class="fa fa-phone"></i> No Phone</a></span>
+	                    <br>
+	                    <span class="r-website">
+	                        <a href="{{info.restaurantInfo.url}}" target="_blank"><i class="fa fa-external-link"></i> {{info.restaurantInfo.url}}</a>
+	                    </span>
+	                </div>
+	            </div>
+	            <div class="col-md-5 review">
+	                <blockquote>
+	                    <img class="pull-left" src="{{info.restaurantInfo.snippet_image_url}}" />
+	                    <i class="fa fa-quote-left"></i> {{info.restaurantInfo.snippet_text}} <i class="fa fa-quote-right"></i>
+	                </blockquote>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+</div>

@@ -1,0 +1,58 @@
+<!--Navigation Menu-->
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand">FoodieJournal</a>
+        <a class="btn-login navbar-brand login-collapsed">Login</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="btn-login" href="" ng-click="loginClick()">Login</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+
+
+      <!-- Login -->
+      <div class="row login-window hide">
+        <div class="col-xs-12">
+          <form>
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Email or Username">
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <button ui-sref="journey" type="submit" class="btn btn-default btn-block">Login</button>
+          </form>
+        </div>
+        <div class="col-xs-12">
+          <p>or login with:</p>
+        </div>
+        <div class="col-xs-4">
+          <div class="sprites facebook"></div>
+        </div>
+        <div class="col-xs-4">
+          <div class="sprites twitter"></div>
+        </div>
+        <div class="col-xs-4">
+          <div class="sprites google-plus"></div>
+        </div>
+        <div class="arrow-up"></div>
+      </div>
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+</header>

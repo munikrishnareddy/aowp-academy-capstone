@@ -60,6 +60,7 @@ select {
 }
 .navbar.navbar-default a {
   color: white !important;
+  font-weight: bold;
 }
 .navbar.navbar-default .navbar-toggle {
   border-color: transparent;
@@ -119,6 +120,11 @@ select {
 .btn {
   border-radius: 0;
 }
+.btn-logos{
+  border: 1px solid;
+  margin-right: 7px;
+  margin-left: 7px;
+}
 .btn-primary {
   background-color: #fe5140;
   border-color: #fe6859;
@@ -144,6 +150,9 @@ select {
 /****************************
  * Login
  ***************************/
+.login-btn{
+  background-color: orange;
+}
 .login-window {
   width: 250px;
   border: 1px solid #d3d3d3;
@@ -441,6 +450,7 @@ footer .footer-images .aowp {
   text-align: center;
   padding: 5px;
   padding-top: 30px;
+  margin-top: 10px;
   min-height: 100px;
   color: white;
   font-weight: bold;
@@ -454,6 +464,7 @@ footer .footer-images .aowp {
 }
 .journey .food-type-container .description {
   background-color: white;
+  color: black;
   min-height: 130px;
   padding: 8px;
   font-size: 12px;
@@ -710,7 +721,7 @@ footer .footer-images .aowp {
  * Login
  ***************************/
 .login-window {
-  width: 250px;
+  width: 200px;
   border: 1px solid #d3d3d3;
   padding: 10px 5px 10px 5px;
   text-align: center;
@@ -720,7 +731,7 @@ footer .footer-images .aowp {
   background-color: white;
   -webkit-box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0);
   z-index: 100;
 }
 .login-window .sprites {
@@ -735,7 +746,7 @@ footer .footer-images .aowp {
   border-bottom: 10px solid white;
   position: absolute;
   top: -10px;
-  right: 10px;
+  right: 20px;
 }
 /* Mobile adjustments */
 @media (max-width: 700px) {
@@ -1270,4 +1281,20 @@ footer .footer-images .aowp {
   .journey-overview-items {
     padding: 0;
   }
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
+  background-color:#fe6859 ;
+}
+
+
+.dropdown-menu{
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 8px 6px -6px black;
+}
+.navbar-pad{
+  padding-left: 0px;
+}
+.navbar-brand{
+  padding-left: 5px;
 }
