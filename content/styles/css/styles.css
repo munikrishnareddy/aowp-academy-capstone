@@ -450,6 +450,7 @@ footer .footer-images .aowp {
   text-align: center;
   padding: 5px;
   padding-top: 30px;
+  margin-top: 10px;
   min-height: 100px;
   color: white;
   font-weight: bold;
@@ -463,6 +464,7 @@ footer .footer-images .aowp {
 }
 .journey .food-type-container .description {
   background-color: white;
+  color: black;
   min-height: 130px;
   padding: 8px;
   font-size: 12px;

@@ -1,0 +1,77 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="journey-overview-container">
+            <div class="journey-overview">
+                <!-- Cuisine Toolbar -->
+                <div class="food-types-widget">
+                    <div class="food-type-buttons">
+                        <a href='#journey-overview/american'><button data-category="american" class="btn btn-default category-button">American</button></a>
+                        <a href='#journey-overview/italian'><button data-category="italian" class="btn btn-default category-button">Italian</button></a>
+                        <a href='#journey-overview/mexican'><button data-category="mexican" class="btn btn-default category-button">Mexican</button></a>
+                        <a href='#journey-overview/japanese'><button data-category="japanese" class="btn btn-primary category-button">Japanese</button></a>
+                    </div>
+                    <div class="food-type-dropdown">
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="food-type-dropdown" data-toggle="dropdown" aria-expanded="false">
+                                Japanese
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="food-type-dropdown">
+                                <li><a id="category-american">American</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a id="category-italian">Italian</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a id="category-mexican">Mexican</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sort-control dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="sort-by" data-toggle="dropdown" aria-expanded="false">
+                            Most Recent <i class="fa fa-sort"></i>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="sort-by">
+                            <li><a>Most Recent</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a>Highest Rated</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a>Top Reviewed</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Journey Information -->
+                <div class="food-type-overview">
+                    <div class="ft-progress">
+                        <div class="progress-sprite" style="background-image: url(/images/japanese-food-icon.png);">
+                        </div>
+                        <div class="radial-progress" data-progress="0">
+                            <div class="circle">
+                                <div class="mask full">
+                                    <div class="fill"></div>
+                                </div>
+                                <div class="mask half">
+                                    <div class="fill"></div>
+                                    <div class="fill fix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ft-description">
+                        <h5>Japanese <span class="st-progress">0%</span></h5>
+                        <p>Japanese food is based on rice with miso soup, with an emphasis on seasonal ingredients with side dishes often consisting of fish and vegetables cooked in broth.</p>
+                    </div>
+                    <div class="ft-actions">
+                        <div class="duration">Duration: 4 weeks</div>
+                        <a href="#journey" class="btn btn-primary btn-block">Follow</a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</div>
