@@ -34,7 +34,7 @@ h6 {
   font-family: 'ProximaNova', sans-serif;
   font-weight: bold;
   /*changed by shakti ranjan samal*/
-  font-size: 20px;
+  font-size: 14px;
 }
 .h4 {
   font-family: 'ProximaNova', sans-serif;
@@ -1229,7 +1229,7 @@ footer .footer-images .aowp {
   min-height: 120px;
 }
 .journey-overview .food-type-overview .ft-progress .circleContainer {
-  background-color: #fe6859;
+  background-color: lightpink;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../../images/american-food-icon.png), linear-gradient(126deg, transparent 50%, #fe5140 50%), linear-gradient(90deg, #fe5140 50%, transparent 50%);
@@ -1442,3 +1442,24 @@ footer .footer-images .aowp {
 .navbar-brand{
   padding-left: 5px;
 }}
+
+/*changes by munikrishna*/
+.dropdown-menu {
+  border-color:red;
+}
+.span.r-wtime
+{
+  font_weight:bold;
+}
+.r-status.open{
+  font_weight:normal;
+}
+.fti-title{
+  font-size:20px;
+}
+.duration{
+  width:105%;
+}
+.btn-primary{
+  width:105%;
+}
