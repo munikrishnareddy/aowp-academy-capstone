@@ -1459,16 +1459,42 @@ span.r-status{
   font-size:20px;
 }
 .duration{
-  width:150%;
+  width:105%;
 }
 .btn-primary{
-  width:150%;
+  width:105%;
 }
-#grad1
+
+/*Mobile*/
+@media(max-width:780px)
 {
-  width: 20%;
-  height: 50%;
-  background-size: cover;
-  background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
-  opacity: .6;
+.btn-primary{
+  background-color:orange;
 }
+  .fa-phone{
+    color:lightblue;
+  }
+  span.r-status{
+    font_weight:normal;
+  }
+   #sort-by{
+    color:darkgrey;
+    font-weight:normal;
+  }
+    .r-review{
+    width:170px;
+  }
+    .r-address{
+      font-weight:bold;
+    }
+    .journey-overview .li-hover a:hover{
+    color:orangered;
+  }
+
+}
+/*Tablet*/
+@media(min-width:780px)and(max-width:990px)
+{
+
+}
+
