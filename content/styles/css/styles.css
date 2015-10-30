@@ -1522,5 +1522,8 @@ span.r-status{
      .mob-contact{
     color:lightblue;
   }
+  .description{
+    font-size: 20px;
+  }
 }
 
