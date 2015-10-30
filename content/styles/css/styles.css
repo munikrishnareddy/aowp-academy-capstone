@@ -820,7 +820,7 @@ font-weight: normal;
  * Login
  ***************************/
 .login-window {
-  width: 250px;
+  width: 200px;
   border: 1px solid #d3d3d3;
   padding: 10px 5px 10px 5px;
   text-align: center;
@@ -830,7 +830,7 @@ font-weight: normal;
   background-color: white;
   -webkit-box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0);
   z-index: 100;
 }
 .login-window .sprites {
@@ -1491,6 +1491,11 @@ span.r-status{
     color:orangered;
   }
 
+}
+.dropdown-menu{
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 8px 6px -6px black;
 }
 /*Tablet*/
 @media(min-width:780px)and(max-width:990px)
