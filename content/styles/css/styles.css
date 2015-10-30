@@ -156,11 +156,13 @@ select {
 
 }
 /* created by shafi*/
+/*start*/
 .btn-logos{
   border: 1px solid;
   margin-right: 7px;
   margin-left: 7px;
 }
+/*End*/
 .btn-primary {
   background-color: #fe5140;
   border-color: #fe6859;
@@ -234,6 +236,11 @@ select {
   }
   .arrow-up {
     display: none;
+  }
+  .btn-logos{
+    border: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 /****************************
