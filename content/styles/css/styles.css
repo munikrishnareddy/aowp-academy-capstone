@@ -115,6 +115,24 @@ select {
   .navbar.navbar-default .navbar-nav .dropdown-menu li a {
     color: white !important;
   }
+
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .navbar.navbar-default .navbar-nav .user-menu {
+    padding: 10px 15px 5px 15px !important;
+    background-color: #FE5140 !important;
+  }
+  /*.navbar.navbar-default .navbar-nav .user-menu {
+    padding-right: 300px;
+    background-color: #FE5140;
+  }
+*/
+  .navbar-right {
+    /*float: left !important;*/
+    left:10px;
+  }
 }
 
 /****************************
@@ -125,6 +143,7 @@ select {
   border-radius: 0;
 
 }
+/* created by shafi*/
 .btn-logos{
   border: 1px solid;
   margin-right: 7px;
@@ -379,7 +398,7 @@ footer .footer-images .aowp {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/*creted by shakti ranjan samal*/
+/*creted by shakti_team2  ranjan samal*/
 .journey-challenge .challenge .ch-body .contact .today{
   font-weight: bold;
   color: black;
