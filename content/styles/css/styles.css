@@ -31,6 +31,8 @@ h5,
 h6 {
   font-family: 'ProximaNova', sans-serif;
   font-weight: bold;
+  /*changed by shakti ranjan samal*/
+  font-size: 20px;
 }
 p,
 a,
@@ -114,11 +116,14 @@ select {
     color: white !important;
   }
 }
+
 /****************************
  * Buttons
  ***************************/
 .btn {
+  background-color:darkgray;
   border-radius: 0;
+
 }
 .btn-logos{
   border: 1px solid;
@@ -331,6 +336,10 @@ footer .footer-images .aowp {
   background-color: transparent;
   margin-bottom: 0px;
 }
+/*creted by shakti ranjan samal*/
+.journey-challenge .breadcrumb .slash{
+  color: #888888;
+}
 .journey-challenge .breadcrumb .current-journey-name {
   color: #a8a8a8;
 }
@@ -338,15 +347,18 @@ footer .footer-images .aowp {
   margin: 10px 80px 10px 80px;
   padding: 5px;
   background-color: white;
-  -webkit-box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.75);
+  webkit-box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 0px  #888888;
 }
 .journey-challenge .challenge .ch-header .ch-number {
   color: white;
+  font-size: 20px;
 }
 .journey-challenge .challenge .ch-header .ch-title {
   margin-left: 15px;
+  font-size:small;
+
 }
 .journey-challenge .challenge .ch-header .challenge-status {
   color: #a8a8a8;
@@ -363,10 +375,25 @@ footer .footer-images .aowp {
   text-align: center;
 }
 .journey-challenge .challenge .ch-body .contact {
-  background-color: #f0f0f0;
+  background-color:white;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+/*creted by shakti ranjan samal*/
+.journey-challenge .challenge .ch-body .contact .today{
+  font-weight: bold;
+  color: black;
+}
+/*creted by shakti ranjan samal*/
+.journey-challenge .challenge .ch-body .contact .time
+{
+  color: grey;
+}
+/*creted by shakti ranjan samal*/
+.journey-challenge .challenge .ch-body .contact .open{
+font-weight: normal;
+}
+
 .journey-challenge .challenge .ch-body .contact hr {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -407,6 +434,9 @@ footer .footer-images .aowp {
   border-color: #e7e7e7;
   cursor: default;
 }
+
+
+
 .provide-reason {
   text-align: center;
 }
@@ -424,7 +454,26 @@ footer .footer-images .aowp {
   text-align: center;
   margin-bottom: 15px;
 }
-/* Tablet adjustments */
+/*mobile adjustment*/
+@media(max-width:510px){
+  .hideformobile{
+    visibility: hidden;
+    /*display: none !important;*/
+
+  }
+
+}
+/* Tablate adjustments */
+@media(min-device-width:510px)and(max-device-width:768px){
+
+}
+/* Desktop adjustment */
+@media(min-device-width:768px)and(max-device-width:1100px) {
+
+}
+
+
+  /* Tablet adjustments */
 @media (max-width: 1000px) {
   .journey-challenge .actions,
   .journey-challenge .challenge {
@@ -588,6 +637,7 @@ footer .footer-images .aowp {
 }
 .journey-overview-items .ft-item .fti-title {
   margin-left: 15px;
+  font-size: 30px;
 }
 .journey-overview-items .ft-item .fti-body {
   margin-top: 5px;
@@ -619,6 +669,7 @@ footer .footer-images .aowp {
 .journey-overview-items .ft-item .fti-body .contact {
   background-color: #f0f0f0;
   padding-top: 10px;
+ font-weight: bold;
 }
 .journey-overview-items .ft-item .fti-body .contact hr {
   margin-top: 5px;
@@ -680,6 +731,7 @@ footer .footer-images .aowp {
   }
   .journey-overview .food-type-overview .ft-description {
     width: 80%;
+    font-style: oblique;
   }
   .journey-overview .food-type-overview .ft-actions {
     float: none;
@@ -697,8 +749,8 @@ footer .footer-images .aowp {
     float: left;
   }
   .circleContainer {
-    width: 50px;
-    height: 50px;
+    width: 50000px;
+    height: 5000px;
     line-height: 45px;
   }
   .journey-overview-items .ft-item .fti-body .profile,
@@ -888,6 +940,10 @@ footer .footer-images .aowp {
   .main-features .utensils {
     margin-top: 10px;
   }
+
+  /*.journey-challenge .breadcrumb{
+   padding-top: 70px;
+  }*/
 }
 /****************************
  * Journey Challenge Screen
@@ -897,6 +953,13 @@ footer .footer-images .aowp {
   font-weight: bold;
   background-color: transparent;
   margin-bottom: 0px;
+
+
+}
+@media(max-device-width:500px){
+  .journey-challenge .breadcrumb {
+    padding-top: 70px;
+  }
 }
 .journey-challenge .breadcrumb .current-journey-name {
   color: #a8a8a8;
@@ -911,14 +974,19 @@ footer .footer-images .aowp {
 }
 .journey-challenge .challenge .ch-header .ch-number {
   color: white;
+  font-size: 30px;
 }
 .journey-challenge .challenge .ch-header .ch-title {
   margin-left: 15px;
+  font-size: 25px;
 }
 .journey-challenge .challenge .ch-header .challenge-status {
   color: #a8a8a8;
   font-weight: bold;
   margin-left: 8px;
+}
+.journey-challenge .challenge .ch-header .challenge-status .uppercase{
+  text-transform: uppercase;
 }
 .journey-challenge .challenge .ch-body {
   margin-top: 5px;
@@ -930,7 +998,7 @@ footer .footer-images .aowp {
   text-align: center;
 }
 .journey-challenge .challenge .ch-body .contact {
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -996,9 +1064,11 @@ footer .footer-images .aowp {
   .journey-challenge .actions,
   .journey-challenge .challenge {
     margin: 0px;
+
   }
   .journey-challenge .challenge .ch-body .body-actions {
     margin-top: 5px;
+   /* box-shadow: 10px 10px 5px ;*/
   }
   .journey-challenge .actions {
     margin-top: 5px;
@@ -1043,6 +1113,10 @@ footer .footer-images .aowp {
     padding-top: 5px;
     padding-bottom: 5px;
   }
+  .journey-challenge .breadcrumb {
+    padding-top: 40%;
+  }
+
   .journey .journey-welcome span {
     display: block;
   }
@@ -1222,6 +1296,12 @@ footer .footer-images .aowp {
   .profile img {
     width: 65px;
     height: auto;
+    width: 310px;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+
   }
   .customerReview {
     font-size: 12px;
@@ -1274,6 +1354,9 @@ footer .footer-images .aowp {
   .journey-overview-items .ft-item .fti-body .contact {
     width: 49.5%;
   }
+  .journey-challenge .breadcrumb{
+      padding-top: 14%;
+    }
 }
 /* Tablet adjustments */
 @media (max-width: 1000px) {
