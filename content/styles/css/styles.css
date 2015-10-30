@@ -723,7 +723,7 @@ font-weight: normal;
   margin-bottom: 5px;
   border-top-color: #a8a8a8;
 }
-.journey-overview-items .ft-item .fti-body .contact .r-status {
+.journey-overview-items .ft-item .fti-body .contact{
   font-weight: bold;
 }
 .journey-overview-items .ft-item .fti-body .contact .r-status.open {
@@ -1323,11 +1323,12 @@ footer .footer-images .aowp {
   margin-bottom: 5px;
   border-top-color: #a8a8a8;
 }
-.journey-overview-items .ft-item .fti-body .contact .r-status {
+.journey-overview-items .ft-item .fti-body .contact  {
   font-weight: bold;
 }
 .journey-overview-items .ft-item .fti-body .contact .r-status.open {
   color: green;
+  font-weight:normal;
 }
 .journey-overview-items .ft-item .fti-body .contact .r-status.closed {
   color: red;
@@ -1451,15 +1452,23 @@ footer .footer-images .aowp {
 {
   font_weight:bold;
 }
-.r-status.open{
+span.r-status{
   font_weight:normal;
 }
 .fti-title{
   font-size:20px;
 }
 .duration{
-  width:105%;
+  width:150%;
 }
 .btn-primary{
-  width:105%;
+  width:150%;
+}
+#grad1
+{
+  width: 20%;
+  height: 50%;
+  background-size: cover;
+  background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+  opacity: .6;
 }
