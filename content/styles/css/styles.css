@@ -1495,6 +1495,27 @@ span.r-status{
 /*Tablet*/
 @media(min-width:780px)and(max-width:990px)
 {
+  .btn-india{
 
+  }
+     .btn-america{
+    background-color:#ffd216;
+    border:#ffd216;
+  }
+    .journey-overview .food-type-overview  .ft-progress .circleContainer{
+    background-color: #0000FF;
+  }
+     #tab-descp{
+    font-size: x-large;
+  }
+      .contact  #tab-today{
+    font-weight: bold;
+  }
+      .journey-overview-items .ft-item .fti-body  .contact .r-status.open{
+    font-weight:normal;
+  }
+     .mob-contact{
+    color:lightblue;
+  }
 }
 
