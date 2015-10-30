@@ -34,7 +34,7 @@ h6 {
   font-family: 'ProximaNova', sans-serif;
   font-weight: bold;
   /*changed by shakti ranjan samal*/
-  font-size: 20px;
+  font-size: 14px;
 }
 .h4 {
   font-family: 'ProximaNova', sans-serif;
@@ -723,7 +723,7 @@ font-weight: normal;
   margin-bottom: 5px;
   border-top-color: #a8a8a8;
 }
-.journey-overview-items .ft-item .fti-body .contact .r-status {
+.journey-overview-items .ft-item .fti-body .contact{
   font-weight: bold;
 }
 .journey-overview-items .ft-item .fti-body .contact .r-status.open {
@@ -820,7 +820,7 @@ font-weight: normal;
  * Login
  ***************************/
 .login-window {
-  width: 250px;
+  width: 200px;
   border: 1px solid #d3d3d3;
   padding: 10px 5px 10px 5px;
   text-align: center;
@@ -830,7 +830,7 @@ font-weight: normal;
   background-color: white;
   -webkit-box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: -5px 6px 9px 0px rgba(0, 0, 0, 0);
   z-index: 100;
 }
 .login-window .sprites {
@@ -1231,7 +1231,7 @@ footer .footer-images .aowp {
   min-height: 120px;
 }
 .journey-overview .food-type-overview .ft-progress .circleContainer {
-  background-color: #fe6859;
+  background-color: lightpink;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(../../images/american-food-icon.png), linear-gradient(126deg, transparent 50%, #fe5140 50%), linear-gradient(90deg, #fe5140 50%, transparent 50%);
@@ -1325,11 +1325,12 @@ footer .footer-images .aowp {
   margin-bottom: 5px;
   border-top-color: #a8a8a8;
 }
-.journey-overview-items .ft-item .fti-body .contact .r-status {
+.journey-overview-items .ft-item .fti-body .contact  {
   font-weight: bold;
 }
 .journey-overview-items .ft-item .fti-body .contact .r-status.open {
   color: green;
+  font-weight:normal;
 }
 .journey-overview-items .ft-item .fti-body .contact .r-status.closed {
   color: red;
@@ -1444,3 +1445,87 @@ footer .footer-images .aowp {
 .navbar-brand{
   padding-left: 5px;
 }}
+
+/*changes by munikrishna*/
+.mostrecent-dropdown {
+  border-color:red;
+}
+.span.r-wtime
+{
+  font_weight:bold;
+}
+span.r-status{
+  font_weight:normal;
+}
+.fti-title{
+  font-size:20px;
+}
+.duration{
+  width:105%;
+}
+.btn-primary{
+  width:105%;
+}
+
+/*Mobile*/
+@media(max-width:780px)
+{
+.btn-primary{
+  background-color:orange;
+}
+  .fa-phone{
+    color:lightblue;
+  }
+  span.r-status{
+    font_weight:normal;
+  }
+   #sort-by{
+    color:darkgrey;
+    font-weight:normal;
+  }
+    .r-review{
+    width:170px;
+  }
+    .r-address{
+      font-weight:bold;
+    }
+    .journey-overview .li-hover a:hover{
+    color:orangered;
+  }
+
+}
+.dropdown-menu{
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 8px 6px -6px black;
+}
+/*Tablet*/
+@media(min-width:780px)and(max-width:990px)
+{
+  .btn-india{
+
+  }
+     .btn-america{
+    background-color:#ffd216;
+    border:#ffd216;
+  }
+    .journey-overview .food-type-overview  .ft-progress .circleContainer{
+    background-color: #0000FF;
+  }
+     #tab-descp{
+    font-size: x-large;
+  }
+      .contact  #tab-today{
+    font-weight: bold;
+  }
+      .journey-overview-items .ft-item .fti-body  .contact .r-status.open{
+    font-weight:normal;
+  }
+     .mob-contact{
+    color:lightblue;
+  }
+  .description{
+    font-size: 20px;
+  }
+}
+
