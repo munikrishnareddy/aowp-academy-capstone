@@ -860,8 +860,10 @@ font-weight: normal;
 
   }
   @media (max-width: 700px) {
-    .facebook, .twitter, .google-plus {
+    .btn-logos{
       border: solid 1px black;
+      padding:5px;
+      margin: 5px;
     }
   }
   .arrow-up {
