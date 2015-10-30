@@ -1,6 +1,7 @@
 /**
  * Created by AOWPINS01_01 on 10/29/2015.
  */
+/*created by shakti ranjan samal*/
 function initialize() {
     var mapProp = {
         center:new google.maps.LatLng(51.508742,-0.120850),
