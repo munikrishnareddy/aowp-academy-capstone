@@ -491,9 +491,6 @@ font-weight: normal;
   border-color: #e7e7e7;
   cursor: default;
 }
-
-
-
 .provide-reason {
   text-align: center;
 }
@@ -578,31 +575,31 @@ font-weight: normal;
   font-weight: bold;
 }
 /* Mobile adjustments */
-@media (max-width: 700px) {
-  .journey .journey-welcome {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  .journey .journey-welcome span {
-    display: block;
-  }
-  .journey .food-type-container {
-    margin-bottom: 10px;
-  }
-  .journey .food-type-container .journey-progress {
-    padding-top: 10px;
-    min-height: 80px;
-  }
-  .journey .food-type-container .sprites {
-    margin: 0 auto;
-  }
-  .journey .food-type-container .food-name-type {
-    line-height: 0px;
-  }
-  .journey .food-type-container .description {
-    min-height: 50px;
-  }
-}
+/*@media (max-width: 700px) {*/
+  /*.journey .journey-welcome {*/
+    /*padding-top: 5px;*/
+    /*padding-bottom: 5px;*/
+  /*}*/
+  /*.journey .journey-welcome span {*/
+    /*display: block;*/
+  /*}*/
+  /*.journey .food-type-container {*/
+    /*margin-bottom: 10px;*/
+  /*}*/
+  /*.journey .food-type-container .journey-progress {*/
+    /*padding-top: 10px;*/
+    /*min-height: 80px;*/
+  /*}*/
+  /*.journey .food-type-container .sprites {*/
+    /*margin: 0 auto;*/
+  /*}*/
+  /*.journey .food-type-container .food-name-type {*/
+    /*line-height: 0px;*/
+  /*}*/
+  /*.journey .food-type-container .description {*/
+    /*min-height: 50px;*/
+  /*}*/
+/*}*/
 /****************************
  * Journey Overview Screen
  ***************************/
@@ -805,8 +802,8 @@ font-weight: normal;
     float: left;
   }
   .circleContainer {
-    width: 50000px;
-    height: 5000px;
+    width: 50px;
+    height: 50px;
     line-height: 45px;
   }
   .journey-overview-items .ft-item .fti-body .profile,
@@ -1133,11 +1130,9 @@ footer .footer-images .aowp {
   .journey-challenge .actions,
   .journey-challenge .challenge {
     margin: 0px;
-
   }
   .journey-challenge .challenge .ch-body .body-actions {
     margin-top: 5px;
-   /* box-shadow: 10px 10px 5px ;*/
   }
   .journey-challenge .actions {
     margin-top: 5px;
@@ -1167,6 +1162,11 @@ footer .footer-images .aowp {
   background-color: #d94f42;
   margin-top: 5px;
 }
+.journey .food-type-container .food-name-type {
+  line-height: 0px;
+  font-size: 30px;
+  color: white;
+}
 .journey .food-type-container .description {
   background-color: white;
   min-height: 130px;
@@ -1177,36 +1177,31 @@ footer .footer-images .aowp {
   font-weight: bold;
 }
 /* Mobile adjustments */
-@media (max-width: 700px) {
-  .journey .journey-welcome {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  .journey-challenge .breadcrumb {
-    padding-top: 40%;
-  }
-
-  .journey .journey-welcome span {
-    display: block;
-  }
-  .journey .food-type-container {
-    margin-bottom: 10px;
-  }
-  .journey .food-type-container .journey-progress {
-    padding-top: 10px;
-    min-height: 80px;
-  }
-  .journey .food-type-container .sprites {
-    margin: 0 auto;
-  }
-  .journey .food-type-container .food-name-type {
-    line-height: 0px;
-  }
-  .journey .food-type-container .description {
-    min-height: 50px;
-  }
-
-}
+/*@media (max-width: 700px) {*/
+  /*.journey .journey-welcome {*/
+    /*padding-top: 5px;*/
+    /*padding-bottom: 5px;*/
+  /*}*/
+  /*.journey .journey-welcome span {*/
+    /*display: block;*/
+  /*}*/
+  /*.journey .food-type-container {*/
+    /*margin-bottom: 10px;*/
+  /*}*/
+  /*.journey .food-type-container .journey-progress {*/
+    /*padding-top: 10px;*/
+    /*min-height: 80px;*/
+  /*}*/
+  /*.journey .food-type-container .sprites {*/
+    /*margin: 0 auto;*/
+  /*}*/
+  /*.journey .food-type-container .food-name-type {*/
+    /*line-height: 0px;*/
+  /*}*/
+  /*.journey .food-type-container .description {*/
+    /*min-height: 50px;*/
+  /*}*/
+/*}*/
 /****************************
  * Journey Overview Screen
  ***************************/
@@ -1334,12 +1329,11 @@ footer .footer-images .aowp {
   margin-bottom: 5px;
   border-top-color: #a8a8a8;
 }
-.journey-overview-items .ft-item .fti-body .contact  {
+.journey-overview-items .ft-item .fti-body .contact .r-status {
   font-weight: bold;
 }
 .journey-overview-items .ft-item .fti-body .contact .r-status.open {
   color: green;
-  font-weight:normal;
 }
 .journey-overview-items .ft-item .fti-body .contact .r-status.closed {
   color: red;
