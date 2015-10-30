@@ -1,0 +1,92 @@
+/*Evaluation css for different media along with internationalization*/
+
+/*
+@greyColor:gray
+
+@mo
+*/
+
+/* Mobile adjustments */
+@media  only screen and (max-width: 767px){
+  .journey .food-type-container .description {
+    min-height: 210px;
+    font-size: 20px;
+  }
+}
+/* Tablate adjustments */
+@media  only screen and (min-width: 768px)and(max-device-width: 991px){
+
+}
+
+/* Desktop adjustments */
+@media only screen and  (min-width:992px) and (max-width:1199px){
+    .journey .journey-welcome {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    /*span:after {*/
+    /*content: "...";}*/
+    .journey .food-type-container {
+        margin-bottom: 10px;
+    }
+    .journey .food-type-container .journey-progress {
+        padding-top: 10px;
+        min-height: 80px;
+    }
+    .journey .food-type-container .sprites {
+        margin: 0 auto;
+    }
+    .journey .food-type-container .food-name-type {
+        line-height: 0px;
+    }
+
+    .journey .food-type-container {
+        margin-bottom: 10px;
+    }
+    .journey .food-type-container .journey-progress {
+        padding-top: 10px;
+        min-height: 80px;
+    }
+
+    .journey .food-type-container .journey-progress .progress-percentage span{
+        display:none;
+    }
+    .journey .food-type-container .journey-progress .progress-percentage span :after{
+        color: gray;
+        font-size: 25px;
+        width: 30px;
+        height:30px;
+        margin: 5px 100px -5px 100px;
+        content: '20%';
+    }
+    .journey .food-type-container .journey-progress .progress-percentage{
+        color: gray;
+        font-size: 25px;
+        width: 30px;
+        height:30px;
+        margin: 5px 100px -5px 100px;
+    }
+    .journey .food-type-container .sprites {
+        margin: 0 auto;
+    }
+    .journey .food-type-container .food-name-type {
+        line-height: 10px;
+        font-size: 25px;
+        color: gray;
+
+    }
+    .journey .food-type-container .food-name-icon {
+        width: 30px;
+        height: 20px;
+    }
+    .journey .food-type-container .description {
+        min-height: 210px;
+        font-size: 18px;
+    }
+
+}
+/* Large Desktop adjustments */
+
+@media  only screen and (min-width:1200px){
+
+}

@@ -473,31 +473,31 @@ footer .footer-images .aowp {
   font-weight: bold;
 }
 /* Mobile adjustments */
-@media (max-width: 700px) {
-  .journey .journey-welcome {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  .journey .journey-welcome span {
-    display: block;
-  }
-  .journey .food-type-container {
-    margin-bottom: 10px;
-  }
-  .journey .food-type-container .journey-progress {
-    padding-top: 10px;
-    min-height: 80px;
-  }
-  .journey .food-type-container .sprites {
-    margin: 0 auto;
-  }
-  .journey .food-type-container .food-name-type {
-    line-height: 0px;
-  }
-  .journey .food-type-container .description {
-    min-height: 50px;
-  }
-}
+/*@media (max-width: 700px) {*/
+  /*.journey .journey-welcome {*/
+    /*padding-top: 5px;*/
+    /*padding-bottom: 5px;*/
+  /*}*/
+  /*.journey .journey-welcome span {*/
+    /*display: block;*/
+  /*}*/
+  /*.journey .food-type-container {*/
+    /*margin-bottom: 10px;*/
+  /*}*/
+  /*.journey .food-type-container .journey-progress {*/
+    /*padding-top: 10px;*/
+    /*min-height: 80px;*/
+  /*}*/
+  /*.journey .food-type-container .sprites {*/
+    /*margin: 0 auto;*/
+  /*}*/
+  /*.journey .food-type-container .food-name-type {*/
+    /*line-height: 0px;*/
+  /*}*/
+  /*.journey .food-type-container .description {*/
+    /*min-height: 50px;*/
+  /*}*/
+/*}*/
 /****************************
  * Journey Overview Screen
  ***************************/
@@ -1028,6 +1028,11 @@ footer .footer-images .aowp {
   background-color: #d94f42;
   margin-top: 5px;
 }
+.journey .food-type-container .food-name-type {
+  line-height: 0px;
+  font-size: 30px;
+  color: white;
+}
 .journey .food-type-container .description {
   background-color: white;
   min-height: 130px;
@@ -1038,31 +1043,31 @@ footer .footer-images .aowp {
   font-weight: bold;
 }
 /* Mobile adjustments */
-@media (max-width: 700px) {
-  .journey .journey-welcome {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  .journey .journey-welcome span {
-    display: block;
-  }
-  .journey .food-type-container {
-    margin-bottom: 10px;
-  }
-  .journey .food-type-container .journey-progress {
-    padding-top: 10px;
-    min-height: 80px;
-  }
-  .journey .food-type-container .sprites {
-    margin: 0 auto;
-  }
-  .journey .food-type-container .food-name-type {
-    line-height: 0px;
-  }
-  .journey .food-type-container .description {
-    min-height: 50px;
-  }
-}
+/*@media (max-width: 700px) {*/
+  /*.journey .journey-welcome {*/
+    /*padding-top: 5px;*/
+    /*padding-bottom: 5px;*/
+  /*}*/
+  /*.journey .journey-welcome span {*/
+    /*display: block;*/
+  /*}*/
+  /*.journey .food-type-container {*/
+    /*margin-bottom: 10px;*/
+  /*}*/
+  /*.journey .food-type-container .journey-progress {*/
+    /*padding-top: 10px;*/
+    /*min-height: 80px;*/
+  /*}*/
+  /*.journey .food-type-container .sprites {*/
+    /*margin: 0 auto;*/
+  /*}*/
+  /*.journey .food-type-container .food-name-type {*/
+    /*line-height: 0px;*/
+  /*}*/
+  /*.journey .food-type-container .description {*/
+    /*min-height: 50px;*/
+  /*}*/
+/*}*/
 /****************************
  * Journey Overview Screen
  ***************************/
