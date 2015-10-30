@@ -120,13 +120,44 @@ angular
   .controller('JourneyCtrl', function ($scope) {
 
   })
-  .controller('JourneyOverviewCtrl', function ($scope, $http) {
-    var url = "http://localhost:8000/search?location=New+York&term=restaurants&limit=10&category_filter=italian";
-    $scope.result1;
-    $http.jsonp(url)
-      .success(function (response) {
-        $scope.result1 = JSON.stringify(response.data);
-      });
+  .controller('JourneyOverviewCtrl', function ($scope, MyYelpAPI) {
+    $scope.businesses = [];
+    MyYelpAPI.retrieveYelp('', function(data) {
+      $scope.businesses = data.businesses;
+      console.log($scope.businesses);
+    })
+  })
+  .factory("MyYelpAPI", function($http) {
+    var count = 0;
+    return {
+      "retrieveYelp": function(name, callback) {
+        var method = 'GET';
+        var url = 'http://api.yelp.com/v2/search';
+        var params = {
+          callback: 'angular.callbacks._'+(count ++),
+          location: 'San+Francisc',
+          oauth_consumer_key: 'kQkIdv9NXoKRC3cv7lYbCg',
+          oauth_token: 'kbLUg3MSgmxDtYczhcPVos_jXJW687_3',
+          oauth_signature_method: "HMAC-SHA1",
+          oauth_timestamp: new Date().getTime(),
+          oauth_nonce: randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'),
+          term: 'food'
+        };
+        var consumerSecret = 'ZBm5d2C19pRE3UbET6XlJnW1U2g';
+        var tokenSecret = 'n2-QgTBPFYjk42x71nDEz-XAMvw';
+        var signature = oauthSignature.generate(method, url, params, consumerSecret, tokenSecret, { encodeSignature: false});
+        params['oauth_signature'] = signature;
+        $http.jsonp(url, {params: params}).success(callback);
+      }
+    }
   });
+
+function randomString(length, chars) {
+  var result = '';
+  for (var i = length; i > 0; --i)
+    result += chars[Math.round(Math.random() * (chars.length - 1))];
+  return result;
+}
+
 
 
