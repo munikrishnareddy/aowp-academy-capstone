@@ -24,29 +24,50 @@
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
-                    <div class="navbar-header">
+                    <div class="navbar-header hidden-xs">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand">FoodieJournal</a>
                         <a class="btn-login navbar-brand login-collapsed" href="#">Login</a>
+                        <a class="navbar-brand">FoodieJournal</a>
+
                     </div>
 
+                    <div class="navbar-header hidden-md hidden-sm">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar hidden-xs "></span>
+                            <span class="icon-bar hidden-xs"></span>
+                            <span class="icon-bar hidden-xs"></span>
+                        </button>
+                        <a class="btn-login navbar-brand" href="#">Login</a>
+                        <a class=" navbar-brand ">FoodieJournal</a>
+                    </div>
+
+
                     <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse" id="menu">
+                    <div class="collapse navbar-collapse hidden-xs`" id="menu">
                         <ul class="nav navbar-nav navbar-right">
                             <li><a class="btn-login" href="#">Login</a>
                             </li>
                         </ul>
                     </div>
+
+
+                    <!--for mobile use-->
+
+
+
+
+
                     <!-- /.navbar-collapse -->
 
 
                     <!-- Login -->
-                    <div class="row login-window hide">
+                    <div class="row login-window hide  ">
                         <div class="col-xs-12">
                             <form>
                                 <div class="form-group">
@@ -55,23 +76,25 @@
                                 <div class="form-group">
                                     <input type="password" class="form-control" placeholder="Password">
                                 </div>
-                                <button type="submit" class="btn btn-block login-btn">Login</button>
+                                <button type="submit" class="btn btn-default visible-sm visible-md btn-block">Login</button>
+                                <button type="submit" class="btn btn-warning btn-block visible-xs">Login</button>
                             </form>
                         </div>
-                        <div class="col-xs-12">
-                            <p>or login with</p>
+                        <div class="col-xs-12 hidden-xs">
+                            <p>or login with:</p>
                         </div>
-                        <div class="col-xs-3 btn-logos">
+                        <div class="col-xs-4">
                             <div class="sprites facebook"></div>
                         </div>
-                        <div class="col-xs-3 btn-logos">
+                        <div class="col-xs-4">
                             <div class="sprites twitter"></div>
                         </div>
-                        <div class="col-xs-3 btn-logos">
+                        <div class="col-xs-4">
                             <div class="sprites google-plus"></div>
                         </div>
                         <div class="arrow-up"></div>
                     </div>
+
                 </div>
                 <!-- /.container-fluid -->
             </nav>
@@ -79,22 +102,22 @@
         </header>
 
         <!-- Main Container-->
-        <div class="row">
-            <div class="col-xs-12">
+        <div class="row ">
+            <div class="col-md-12 ">
                 <div class="main-content">
                     <div class="main-content-intro">
                         <h2>Challenge Yourself</h2>
                         <h4>FoodieJournal makes it easy for you to embark
                                                 <br> on a journey to discover new cuisines</h4>
-                        <button class="btn btn-primary">Get Started</button>
-                        <div class="main-content-discover">
+                        <button class="btn btn-primary  hidden-xs">Get Started</button>
+                        <button class="btn1 btn-primary hidden-sm hidden-md hidden-lg ">Get Started</button>
+                        <div class="main-content-discover hidden-sm" >
                             Discover More <span class="glyphicon glyphicon-menu-down"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
         <!--Main Features-->
         <div class="row">
             <div class="col-xs-12">
@@ -118,7 +141,7 @@
                     <div class="col-sm-4">
                         <div class="circleContainer">
                             <div class="sprites check-white"></div>
-                        </div>                        
+                        </div>
                         <p>Complete challenges and
                             <br>track your progress against
                             <br>your selected cuisine journey</p>
@@ -126,7 +149,7 @@
                 </div>
             </div>
         </div>
-        
+
         <footer>
             <p>Developed by</p>
             <div class="footer-images">
