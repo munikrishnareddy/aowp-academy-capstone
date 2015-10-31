@@ -10,6 +10,14 @@
  */
 angular
   .module('aowpAcademyCapstoneApp', ['ui.router', 'ui.bootstrap'])
+  .directive('itemList', function () {
+    return {
+    restrict : 'E',
+    templateUrl : 'views/task.html',
+      controller: 'JourneyOverviewCtrl'
+  }
+  })
+
   .config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider
       .otherwise('/home');
@@ -52,8 +60,6 @@ angular
 
       .state('journeyOverview', {
         url: '/journeyOverview',
-        controller: 'JourneyOverviewCtrl',
-        controllerAs: 'journeyOverview',
         views: {
           '': {templateUrl: 'views/foodie-journal-wrapper.html'},
           'header@journeyOverview': {
@@ -62,46 +68,29 @@ angular
             controllerAs: 'navbar'
           },
           'main@journeyOverview': {
-            templateUrl: 'views/journey-overview.html',
-            controller: 'JourneyOverviewCtrl',
-            controllerAs: 'journeyOverview'
+            templateUrl: 'views/journey-overview.html'
           }
         }
       })
 
       .state('journeyOverview.american', {
-        templateUrl: 'views/journey-american.html',
-        controller: function ($scope) {
-          $scope.items = ['item 1', 'item 2', 'item 3'];
-        }
+        templateUrl: 'views/task.html'
       })
 
       .state('journeyOverview.italian', {
-        templateUrl: 'views/journey-italian.html',
-        controller: function ($scope) {
-          $scope.items = ['item 1', 'item 2', 'item 3'];
-        }
+        templateUrl: 'views/task.html'
       })
 
       .state('journeyOverview.mexican', {
-        templateUrl: 'views/journey-mexican.html',
-        controller: function ($scope) {
-          $scope.items = ['item 1', 'item 2', 'item 3'];
-        }
+        templateUrl: 'views/task.html'
       })
 
       .state('journeyOverview.japanese', {
-        templateUrl: 'views/journey-japanese.html',
-        controller: function ($scope) {
-          $scope.items = ['item 1', 'item 2', 'item 3'];
-        }
+        templateUrl: 'views/task.html'
       })
 
       .state('journeyOverview.korean', {
-        templateUrl: 'views/journey-korean.html',
-        controller: function ($scope) {
-          $scope.items = ['item 1', 'item 2', 'item 3'];
-        }
+        templateUrl: 'views/task.html'
       })
 
   })
@@ -121,10 +110,10 @@ angular
 
   })
   .controller('JourneyOverviewCtrl', function ($scope, MyYelpAPI) {
-    $scope.businesses = [];
     MyYelpAPI.retrieveYelp('', function(data) {
-      $scope.businesses = data.businesses;
-      console.log($scope.businesses);
+      $scope.infos = data.businesses;
+      $scope.counter=0;
+      console.log($scope.infos);
     })
   })
   .factory("MyYelpAPI", function($http) {
