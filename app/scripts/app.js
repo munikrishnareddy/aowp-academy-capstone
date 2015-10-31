@@ -14,7 +14,7 @@ angular
     return {
     restrict : 'E',
     templateUrl : 'views/task.html',
-      controller: 'JourneyOverviewCtrl'
+    controller: 'JourneyOverviewCtrl'
   }
   })
 
@@ -110,12 +110,19 @@ angular
 
   })
   .controller('JourneyOverviewCtrl', function ($scope, MyYelpAPI) {
-    MyYelpAPI.retrieveYelp('', function(data) {
-      $scope.infos = data.businesses;
-      $scope.counter=0;
-      console.log($scope.infos);
-    })
+
+      $scope.fetchYelpData = function () {
+      MyYelpAPI.retrieveYelp('', function (data) {
+        $scope.infos = data.businesses;
+        $scope.counter = 0;
+        console.log($scope.infos);
+      })
+    }
+
+    $scope.fetchYelpData();
   })
+
+
   .factory("MyYelpAPI", function($http) {
     var count = 0;
     return {
