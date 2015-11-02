@@ -326,7 +326,7 @@ footer .footer-images .aowp {
 /* Tablet adjustments */
 @media (max-width: 1100px) {
   .main-content {
-    height: 400;
+    height: 400px;
   }
   .main-content .main-content-text {
     padding-top: 60px;
@@ -967,7 +967,7 @@ footer .footer-images .aowp {
 /* Tablet adjustments */
 @media (max-width: 1100px) {
   .main-content {
-    height: 400;
+    height: 400px;
   }
   .main-content .main-content-text {
     padding-top: 60px;
@@ -1552,5 +1552,9 @@ span.r-status{
 .container-fluid{
   padding-right: 0px;
   padding-left: 0px;
+}
+.container-fluid-home{
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
