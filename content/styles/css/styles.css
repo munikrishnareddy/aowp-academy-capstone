@@ -84,7 +84,7 @@ select {
   background-color: white;
 }
 .navbar.navbar-default .navbar-nav .user-menu {
-  padding: 10px 15px 5px 15px !important;
+  padding: 10px 15px 5px 5px !important;
   background-color: #FE5140 !important;
 }
 .navbar.navbar-default .nav.navbar-nav li.active a {
@@ -1536,5 +1536,9 @@ span.r-status{
   .description{
     font-size: 20px;
   }
+}
+.container-fluid{
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
