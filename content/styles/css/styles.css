@@ -84,7 +84,7 @@ select {
   background-color: white;
 }
 .navbar.navbar-default .navbar-nav .user-menu {
-  padding: 10px 15px 5px 15px !important;
+  padding: 10px 15px 5px 5px !important;
   background-color: #FE5140 !important;
 }
 .navbar.navbar-default .nav.navbar-nav li.active a {
@@ -326,7 +326,7 @@ footer .footer-images .aowp {
 /* Tablet adjustments */
 @media (max-width: 1100px) {
   .main-content {
-    height: 400;
+    height: 400px;
   }
   .main-content .main-content-text {
     padding-top: 60px;
@@ -968,7 +968,7 @@ footer .footer-images .aowp {
 /* Tablet adjustments */
 @media (max-width: 1100px) {
   .main-content {
-    height: 400;
+    height: 400px;
   }
   .main-content .main-content-text {
     padding-top: 60px;
@@ -1549,5 +1549,13 @@ span.r-status{
   .description{
     font-size: 20px;
   }
+}
+.container-fluid{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.container-fluid-home{
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
