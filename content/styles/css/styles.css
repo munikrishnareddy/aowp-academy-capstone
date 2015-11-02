@@ -678,8 +678,8 @@ font-weight: normal;
 }
 .journey-overview-items .ft-item {
   margin-bottom: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
   background-color: white;
 }
 .journey-overview-items .ft-item .fti-header .fa.active {
@@ -687,13 +687,14 @@ font-weight: normal;
 }
 
 .journey-overview-items .ft-item .fti-header {
-  vertical-align: middle;
+  margin: 0;
 }
 
 .journey-overview-items .ft-item .fti-number {
 
   margin-left: 30px;
   color: white;
+  font-size: 13px;
   font-style: normal;
   background-color: black;
   border-radius: 50%;
@@ -703,7 +704,7 @@ font-weight: normal;
 }
 .journey-overview-items .ft-item .fti-title {
   margin-left: 15px;
-  font-size: 20px;
+  font-size: 15px;
   vertical-align: middle;
   color: black;
   background-color: white;

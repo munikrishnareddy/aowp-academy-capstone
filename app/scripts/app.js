@@ -111,27 +111,26 @@ angular
   })
   .controller('JourneyOverviewCtrl', function ($scope, MyYelpAPI) {
 
-      $scope.fetchYelpData = function () {
-      MyYelpAPI.retrieveYelp('', function (data) {
+    $scope.fetchYelpData = function (category) {
+      MyYelpAPI.retrieveYelp('', category, function (data) {
         $scope.infos = data.businesses;
         $scope.counter = 0;
-        console.log($scope.infos);
       })
     }
 
-    $scope.fetchYelpData();
+    $scope.fetchYelpData('newamerican');
   })
 
 
   .factory("MyYelpAPI", function($http) {
     var count = 0;
     return {
-      "retrieveYelp": function(name, callback) {
+      "retrieveYelp": function(name, categoryFilter, callback) {
         var method = 'GET';
         var url = 'http://api.yelp.com/v2/search';
         var params = {
           callback: 'angular.callbacks._'+(count ++),
-          location: 'San+Francisc',
+          location: 'New+York',
           oauth_consumer_key: 'kQkIdv9NXoKRC3cv7lYbCg',
           oauth_token: 'kbLUg3MSgmxDtYczhcPVos_jXJW687_3',
           oauth_signature_method: "HMAC-SHA1",
@@ -141,8 +140,10 @@ angular
         };
         var consumerSecret = 'ZBm5d2C19pRE3UbET6XlJnW1U2g';
         var tokenSecret = 'n2-QgTBPFYjk42x71nDEz-XAMvw';
+        params['category_filter'] = categoryFilter;
         var signature = oauthSignature.generate(method, url, params, consumerSecret, tokenSecret, { encodeSignature: false});
         params['oauth_signature'] = signature;
+
         $http.jsonp(url, {params: params}).success(callback);
       }
     }
