@@ -72,27 +72,6 @@ angular
           }
         }
       })
-
-      .state('journeyOverview.american', {
-        templateUrl: 'views/task.html'
-      })
-
-      .state('journeyOverview.italian', {
-        templateUrl: 'views/task.html'
-      })
-
-      .state('journeyOverview.mexican', {
-        templateUrl: 'views/task.html'
-      })
-
-      .state('journeyOverview.japanese', {
-        templateUrl: 'views/task.html'
-      })
-
-      .state('journeyOverview.korean', {
-        templateUrl: 'views/task.html'
-      })
-
   })
 
   .controller('NavBarCtrl', function ($scope) {
@@ -106,20 +85,27 @@ angular
   .controller('HomeCtrl', function ($scope) {
 
   })
-  .controller('JourneyCtrl', function ($scope, categoryService) {
+  .controller('JourneyCtrl', function ($scope, MyYelpAPI, categoryService) {
     categoryService.setCategory($scope.category);
-  })
-  .controller('JourneyOverviewCtrl', function ($scope, MyYelpAPI, categoryService) {
-
     $scope.fetchYelpData = function (category) {
       categoryService.setCategory(category);
       MyYelpAPI.retrieveYelp('', category, categoryService.getCount(), function (data) {
         $scope.infos = data.businesses;
       })
     }
+  })
+  .controller('JourneyOverviewCtrl', function ($scope, MyYelpAPI, categoryService) {
+    $scope.fetchYelpData = function (category) {
 
-    //$(".food-type-buttons button").addClass("btn-primary");
-    console.log('hiii...category'+categoryService.getCategory());
+      $(".food-types-widget .food-type-buttons .btn").removeClass( "btn-primary" ).addClass( "btn-default" );
+      $('.food-types-widget .food-type-buttons .'+category).removeClass( "btn-default" ).addClass( "btn-primary" );
+
+      categoryService.setCategory(category);
+      MyYelpAPI.retrieveYelp('', category, categoryService.getCount(), function (data) {
+        $scope.infos = data.businesses;
+      })
+    }
+
     $scope.fetchYelpData(categoryService.getCategory());
   })
 
@@ -166,14 +152,10 @@ angular
       return count++;
     };
 
-    var setCount = function(newObj){
-      count = newObj;
-    };
 
     return {
       setCategory: setCategory,
       getCategory: getCategory,
-      setCount: setCount,
       getCount: getCount
     };
 

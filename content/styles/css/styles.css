@@ -53,7 +53,6 @@ input,
 table,
 select {
   font-family: 'ProximaNova', sans-serif;
-  color:grey;
 }
 .clear {
   clear: both;
@@ -164,6 +163,12 @@ select {
   padding: 7px;
 }
 /*End*/
+
+.btn-default {
+  background-color: #e7e7e7;
+  border-color: #e7e7e7;
+  color: black;
+}
 
 .btn-default:active,
 .btn-default:focus {
@@ -578,6 +583,7 @@ font-weight: normal;
   min-height: 130px;
   padding: 8px;
   font-size: 12px;
+  color: grey;
 }
 .journey .food-type-container .duration {
   font-weight: bold;
@@ -699,25 +705,11 @@ font-weight: normal;
 }
 
 .journey-overview-items .ft-item .fti-number {
-
-  margin-left: 30px;
   color: white;
-  font-size: 13px;
   font-style: normal;
-  background-color: black;
-  border-radius: 50%;
-  padding: 8px;
-  width: 20px;
-  height: 20px;
 }
 .journey-overview-items .ft-item .fti-title {
   margin-left: 15px;
-  font-size: 15px;
-  vertical-align: middle;
-  color: black;
-  background-color: white;
-  border: 0;
-  display: inline;
 }
 .journey-overview-items .ft-item .fti-body {
   margin-top: 5px;

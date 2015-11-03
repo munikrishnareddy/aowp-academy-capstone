@@ -15,7 +15,8 @@
 
       <div class="collapse navbar-collapse" id="menu">
         <ul class="nav navbar-nav">
-          <li><a ui-sref="journeyOverview.american" ng-click="fetchYelpData('newamerican')">Journey</a>
+          <li><a ui-sref="journeyOverview" ng-click="fetchYelpData('newamerican')">Journey</a>
+            <input type="hidden" ng-model="category" value="newamerican">
           </li>
           <li class="active"><a ui-sref="journey">My Progress</a>
           </li>

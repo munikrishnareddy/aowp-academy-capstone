@@ -2,8 +2,8 @@
 	<div class="table">
 	        <div class="fti-header row collapsed" data-toggle="collapse" data-target="#item-{{info.id}}">
 	            <span class="fa-stack fa-lg text-center mov-rig">
-	                <!--<i class="fa fa-stack-2x mov-bot medium fa-circle fti-number">{{$index+1}}</i>-->
-	                <i class="fa-circle fti-number">{{$index+1}}</i>
+	                <i class="fa fa-stack-2x mov-bot medium fa-circle"></i>
+	                <i class="fa-stack-1x fti-number">{{$index+1}}</i>
 	            </span>
 
 	            <span class="fti-title">
@@ -29,12 +29,12 @@
 	                    <span class="r-wtime">Today 8:00 am - 9:00 pm<br></span>
 	                    <span class="r-status open">Open now</span>
 	                    <hr>
-                            <span class="glyphicon glyphicon-earphone"></span>
+                            <!--<span class="glyphicon glyphicon-earphone"></span>-->
                             <span class="r-phone" ng-show="info.display_phone"><a><i class="fa fa-phone"></i> {{info.display_phone}}</a></span>
                             <span class="r-phone" ng-hide="info.display_phone"><a><i class="fa fa-phone"></i> No Phone</a></span>
 	                    <br>
 	                    <span class="r-website">
-                          <span class="glyphicon glyphicon-globe"></span>
+                          <!--<span class="glyphicon glyphicon-globe"></span>-->
 	                        <a href="{{info.url}}" target="_blank"><i class="fa fa-external-link"></i> {{info.url}}</a>
 	                    </span>
 	                </div>
@@ -48,5 +48,4 @@
 	        </div>
 	    </div>
 	</div>
-
 </div>
