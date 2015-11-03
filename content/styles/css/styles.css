@@ -164,6 +164,14 @@ select {
   padding: 7px;
 }
 /*End*/
+
+.btn-default:active,
+.btn-default:focus {
+  background-color: #fe5140;
+  border-color: #fe5140;
+  color: white;
+}
+
 .btn-primary {
   background-color: #fe5140;
   border-color: #fe6859;

@@ -106,37 +106,39 @@ angular
   .controller('HomeCtrl', function ($scope) {
 
   })
-  .controller('JourneyCtrl', function ($scope) {
-
+  .controller('JourneyCtrl', function ($scope, categoryService) {
+    categoryService.setCategory($scope.category);
   })
-  .controller('JourneyOverviewCtrl', function ($scope, MyYelpAPI) {
+  .controller('JourneyOverviewCtrl', function ($scope, MyYelpAPI, categoryService) {
 
     $scope.fetchYelpData = function (category) {
-      MyYelpAPI.retrieveYelp('', category, function (data) {
+      categoryService.setCategory(category);
+      MyYelpAPI.retrieveYelp('', category, categoryService.getCount(), function (data) {
         $scope.infos = data.businesses;
-        $scope.counter = 0;
       })
     }
 
-    $scope.fetchYelpData('newamerican');
+    //$(".food-type-buttons button").addClass("btn-primary");
+    console.log('hiii...category'+categoryService.getCategory());
+    $scope.fetchYelpData(categoryService.getCategory());
   })
 
 
   .factory("MyYelpAPI", function($http) {
-    var count = 0;
     return {
-      "retrieveYelp": function(name, categoryFilter, callback) {
+      "retrieveYelp": function(name, categoryFilter, count, callback) {
         var method = 'GET';
         var url = 'http://api.yelp.com/v2/search';
         var params = {
-          callback: 'angular.callbacks._'+(count ++),
+          callback: 'angular.callbacks._'+(count),
           location: 'New+York',
           oauth_consumer_key: 'kQkIdv9NXoKRC3cv7lYbCg',
           oauth_token: 'kbLUg3MSgmxDtYczhcPVos_jXJW687_3',
           oauth_signature_method: "HMAC-SHA1",
           oauth_timestamp: new Date().getTime(),
           oauth_nonce: randomString(32, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'),
-          term: 'food'
+          term: 'food',
+          limit: 10
         };
         var consumerSecret = 'ZBm5d2C19pRE3UbET6XlJnW1U2g';
         var tokenSecret = 'n2-QgTBPFYjk42x71nDEz-XAMvw';
@@ -147,7 +149,35 @@ angular
         $http.jsonp(url, {params: params}).success(callback);
       }
     }
-  });
+  })
+
+.service("categoryService", function() {
+    var category = "";
+    var count = 0;
+    var setCategory = function(newObj) {
+      category = newObj;
+    };
+
+    var getCategory = function(){
+      return category;
+    };
+
+    var getCount = function(){
+      return count++;
+    };
+
+    var setCount = function(newObj){
+      count = newObj;
+    };
+
+    return {
+      setCategory: setCategory,
+      getCategory: getCategory,
+      setCount: setCount,
+      getCount: getCount
+    };
+
+  })
 
 function randomString(length, chars) {
   var result = '';

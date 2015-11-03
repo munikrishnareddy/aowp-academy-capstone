@@ -4,12 +4,12 @@
             <div class="journey-overview">
                 <!-- Cuisine Toolbar -->
                 <div class="food-types-widget">
-                    <div class="food-type-buttons">
-                        <a ui-sref='journeyOverview.american' ng-click="fetchYelpData('newamerican')"><button class="btn btn-default category-button">American</button></a>
-                        <a ui-sref='journeyOverview.italian' ng-click="fetchYelpData('italian')"><button class="btn btn-default category-button">Italian</button></a>
-                        <a ui-sref='journeyOverview.mexican' ng-click="fetchYelpData('mexican')"><button class="btn btn-default category-button">Mexican</button></a>
-                        <a ui-sref='journeyOverview.japanese' ng-click="fetchYelpData('japanese')"><button class="btn btn-primary category-button">Japanese</button></a>
-                        <a ui-sref='journeyOverview.korean' ng-click="fetchYelpData('korean')"><button class="btn btn-primary category-button">Korean</button></a>
+                    <div class="food-type-buttons" data-toggle="buttons-radio">
+                        <a ui-sref='journeyOverview.american'><button ng-click="fetchYelpData('newamerican')" data-toggle="button" class="btn btn-default category-button american">American</button></a>
+                        <a ui-sref='journeyOverview.italian'><button ng-click="fetchYelpData('italian')" data-toggle="button" class="btn btn-default category-button italian">Italian</button></a>
+                        <a ui-sref='journeyOverview.mexican'><button ng-click="fetchYelpData('mexican')" data-toggle="button" class="btn btn-default category-button mexican">Mexican</button></a>
+                        <a ui-sref='journeyOverview.japanese'><button ng-click="fetchYelpData('japanese')" data-toggle="button" class="btn btn-default category-button japanese">Japanese</button></a>
+                        <a ui-sref='journeyOverview.korean'><button ng-click="fetchYelpData('korean')" data-toggle="button" class="btn btn-default category-button korean">Korean</button></a>
                     </div>
 
                     <div class="food-type-dropdown">

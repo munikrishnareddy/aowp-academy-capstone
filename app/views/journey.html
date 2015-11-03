@@ -8,7 +8,8 @@
           <h3><span class="hidden-md">Welcome!...</span><span class="hidden-xs hidden-sm hidden-lg"> Welcome!</span>Choose a track to get started</h3>
         </div>
         <a href="#">
-          <div ui-sref="journeyOverview" class="col-sm-6 col-md-4 food-type-container">
+          <div ui-sref="journeyOverview.american" class="col-sm-6 col-md-4 food-type-container">
+            <!--<input type="hidden" ng-model="category" ng-init="category='newamerican'">-->
             <div class="journey-progress">
               <img src="../content/images/american-food-icon.png" alt="American Food"/>
               <span class="food-name-type">American</span>
@@ -24,7 +25,8 @@
         </a>
 
         <a href="#">
-          <div ui-sref="journeyOverview" class="col-sm-6 col-md-4 food-type-container">
+          <div ui-sref="journeyOverview.italian" class="col-sm-6 col-md-4 food-type-container">
+            <input type="hidden" ng-model="category" value="italian">
             <div class="journey-progress">
               <img src="../content/images/italian-food-icon.png" alt="Italian Food"/>
               <span class="food-name-type">Italian</span>
@@ -41,7 +43,8 @@
         </a>
 
         <a href="#">
-          <div ui-sref="journeyOverview" class="col-sm-6 col-md-4 food-type-container">
+          <div ui-sref="journeyOverview.mexican" class="col-sm-6 col-md-4 food-type-container">
+            <input type="hidden" ng-model="category" value="mexican">
             <div class="journey-progress">
               <img src="../content/images/mexican-food-icon.png" alt="Mexican Food"/>
               <span class="food-name-type">Mexican</span>
@@ -57,7 +60,8 @@
         </a>
 
         <a href="#">
-          <div ui-sref="journeyOverview" class="col-sm-6 col-md-4 food-type-container">
+          <div ui-sref="journeyOverview.japanese" class="col-sm-6 col-md-4 food-type-container">
+            <input type="hidden" ng-model="category" value="japanese">
             <div class="journey-progress">
               <img src="../content/images/japanese-food-icon.png" alt="Japanese Food"/>
               <span class="food-name-type">Japanese</span>
@@ -75,7 +79,8 @@
 
 
         <a href="#">
-          <div ui-sref="journeyOverview" class="col-sm-6 col-md-4 food-type-container">
+          <div ui-sref="journeyOverview.korean" class="col-sm-6 col-md-4 food-type-container">
+            <input type="hidden" ng-model="category" value="korean">
             <div class="journey-progress">
               <img src="../content/images/Chopsticks.png" alt="Korean Food"/>
               <span class="food-name-type">Korean</span>
